@@ -1,0 +1,1962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Decan World – For a Higher Ground | Luxury Indian Sneakers</title>
+<meta name="description" content="Decan World creates handcrafted sneakers for those who move with purpose. Built on comfort, Indian culture, and timeless design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sand:#e8c99b;
+  --sand-light:#f7edd9;
+  --sand-dark:#c9a46b;
+  --ink:#0d0c0b;
+  --ink-soft:#1a1917;
+  --cream:#f2eee8;
+  --cream-card:#faf8f5;
+  --muted:#5d5a55;
+  --muted-light:#87847e;
+  --border-subtle:rgba(13,12,11,0.08);
+  --border-medium:rgba(13,12,11,0.15);
+  --success:#22863a;
+  --serif:"Playfair Display","Times New Roman",serif;
+  --sans:"DM Sans",system-ui,sans-serif;
+  --script:"Caveat","Segoe Script",cursive;
+  box-sizing:border-box;
+}
+*,*::before,*::after{box-sizing:inherit;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+img{display:block;max-width:100%}
+input,select,textarea{font-family:inherit}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;padding:13px 28px;font-size:14px;font-weight:500;transition:all .25s ease;cursor:pointer;user-select:none}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,0.12)}
+.btn:active{transform:translateY(0)}
+.btn svg,.arrow{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6}
+.btn-sand{background:var(--sand);color:var(--ink)}
+.btn-sand:hover{background:#dfbe8c}
+.btn-dark{background:var(--ink);color:var(--sand)}
+.btn-dark:hover{background:#23211e;color:#fff}
+.btn-outline{border:1px solid var(--ink);color:var(--ink);background:transparent}
+.btn-outline:hover{background:var(--ink);color:var(--sand)}
+.btn-sm{padding:8px 18px;font-size:12.5px}
+:focus-visible{outline:2px solid var(--sand);outline-offset:3px}
+
+/* HERO SECTION */
+.hero{position:relative;min-height:min(100vw*.332 + 120px,680px);height:max(520px,33.3vw);color:#fff;background:#0d0c0b;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:80% 50%;transition:opacity .7s ease,transform 1.2s ease}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(13,12,11,.94) 0%,rgba(13,12,11,.75) 30%,rgba(13,12,11,0) 62%),linear-gradient(180deg,rgba(13,12,11,.6),transparent 25%)}
+
+/* NAVIGATION */
+nav{position:absolute;z-index:20;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:20px 5.4vw;transition:background .3s}
+.logo{display:flex;align-items:center;gap:10px;font-size:20px;letter-spacing:.2em;font-weight:400;color:#fff}
+.logo .mark{width:40px;height:auto}
+.links{display:flex;gap:44px;margin-left:-10vw;font-size:13px}
+.links a{opacity:.92;transition:color .2s,opacity .2s;position:relative}
+.links a:hover,.links a.on{color:var(--sand);opacity:1}
+.links a.on::after{content:"";position:absolute;bottom:-4px;left:0;right:0;height:1px;background:var(--sand)}
+.nav-r{display:flex;align-items:center;gap:26px}
+.icon{width:21px;height:21px;fill:none;stroke:#fff;stroke-width:1.5;cursor:pointer;transition:stroke .2s,transform .2s}
+.icon:hover{stroke:var(--sand);transform:scale(1.08)}
+.bag{position:relative;display:flex;align-items:center}
+.bag b{position:absolute;top:-9px;right:-11px;background:var(--sand);color:var(--ink);font-size:9.5px;font-weight:700;width:17px;height:17px;border-radius:50%;display:grid;place-items:center;transition:transform .2s}
+.bag.bounce b{animation:badgePop .35s ease}
+@keyframes badgePop{0%{transform:scale(1)}50%{transform:scale(1.4)}100%{transform:scale(1)}}
+.burger{display:none;background:none;border:none}
+.nav-r .btn{padding:10px 24px;font-size:13px}
+
+/* HERO COPY */
+.hero-copy{position:relative;z-index:3;padding:calc(12.3vw - 20px) 0 0 8.7vw;max-width:48vw}
+.eyebrow{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--sand)}
+h1{font-family:var(--serif);font-weight:500;font-size:clamp(46px,5.35vw,84px);line-height:.98;margin:20px 0 16px;letter-spacing:-.01em}
+h1 span{color:var(--sand);display:block}
+.hero-copy p.lede{font-size:15.5px;line-height:1.45;max-width:380px;margin-bottom:26px;color:rgba(255,255,255,0.85)}
+.feats{position:absolute;z-index:3;left:8.7vw;bottom:5.5%;display:flex;font-size:12.5px;line-height:1.25}
+.feats div{display:flex;align-items:center;gap:12px;padding:0 24px}
+.feats div:first-child{padding-left:0}
+.feats div+div{border-left:1px solid rgba(255,255,255,.25)}
+.feats svg{width:28px;height:28px;fill:none;stroke:#fff;stroke-width:1.2;flex:none}
+.side{position:absolute;z-index:3;right:5.8vw;top:15%;display:flex;flex-direction:column;align-items:center;gap:22px;font-size:15px;color:rgba(255,255,255,.55)}
+.side span{cursor:pointer;transition:color .2s}
+.side span:hover{color:#fff}
+.side .cur{color:var(--sand);font-weight:600}
+.side i{width:1px;height:58px;background:rgba(255,255,255,.4)}
+.tag{position:absolute;z-index:3;font-family:var(--script);font-size:25px;line-height:1.1;color:rgba(255,255,255,.85);transform:rotate(-8deg);pointer-events:none}
+.tag::after{content:"";display:block;width:34px;height:1px;background:currentColor;margin-top:6px}
+.tag-hero{right:15.5%;top:34%}
+
+/* ANNOUNCEMENT TICKER */
+.ticker-bar{background:var(--ink-soft);color:var(--sand);padding:10px 0;font-size:12px;letter-spacing:.12em;text-transform:uppercase;overflow:hidden;border-bottom:1px solid rgba(232,201,155,0.15)}
+.ticker-track{display:flex;width:max-content;animation:ticker 35s linear infinite;gap:40px}
+.ticker-track:hover{animation-play-state:paused}
+.ticker-item{display:flex;align-items:center;gap:12px;white-space:nowrap}
+.ticker-item span.dot{width:4px;height:4px;background:var(--sand);border-radius:50%}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* FEATURED COLLECTION (ORIGINAL DESIGN) */
+.collection{display:grid;grid-template-columns:23vw 25vw 1fr;align-items:center;padding:3.1vw 2.6vw 3.1vw 6.8vw;gap:0}
+.label{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h2{font-family:var(--serif);font-weight:500;font-size:clamp(34px,3.6vw,56px);line-height:1;letter-spacing:-.01em;margin-top:18px}
+h2 em{font-style:normal;color:var(--sand)}
+.coll-text{border-left:1px solid #d8d2c8;padding-left:2.2vw;margin-left:-3vw;font-size:12.5px;line-height:1.5;color:var(--muted)}
+.coll-text a{display:inline-flex;gap:8px;align-items:center;margin-top:14px;color:var(--ink);font-size:14px;font-weight:500;transition:gap .2s}
+.coll-text a:hover{gap:12px;color:var(--sand-dark)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{position:relative;aspect-ratio:1.64;border-radius:6px;overflow:hidden;background:#111;color:#fff;cursor:pointer;display:block}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.card:hover img{transform:scale(1.05)}
+.card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.82))}
+.card div{position:absolute;z-index:2;left:16px;bottom:14px;right:16px;display:flex;justify-content:space-between;align-items:flex-end}
+.card h3{font-family:var(--serif);font-weight:400;font-size:20px}
+.card small{display:block;font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;margin-top:6px;opacity:.85;color:var(--sand)}
+.circ{width:30px;height:30px;border:1px solid rgba(255,255,255,.7);border-radius:50%;display:grid;place-items:center;transition:background .2s,border-color .2s}
+.card:hover .circ{background:var(--sand);border-color:var(--sand)}
+.card:hover .circ svg{stroke:var(--ink)}
+.circ svg{width:13px;height:13px}
+
+/* FULL INTERACTIVE CATALOG SECTION */
+.catalog-section{padding:20px 6.8vw 80px;background:var(--cream)}
+.catalog-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;flex-wrap:wrap;gap:20px;border-bottom:1px solid #ddd7cd;padding-bottom:24px}
+.catalog-title h2{margin-top:6px}
+.catalog-controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.filter-tabs{display:flex;gap:8px;background:rgba(13,12,11,0.05);padding:4px;border-radius:999px;flex-wrap:wrap}
+.filter-tab{padding:8px 18px;border-radius:999px;font-size:12.5px;font-weight:500;color:var(--muted);transition:all .2s;cursor:pointer}
+.filter-tab.active,.filter-tab:hover{background:var(--ink);color:var(--sand)}
+.sort-wrap{position:relative}
+.sort-select{padding:9px 36px 9px 16px;border-radius:999px;border:1px solid #d8d2c8;background:#fff;font-size:12.5px;color:var(--ink);cursor:pointer;appearance:none}
+.sort-wrap::after{content:"↓";position:absolute;right:14px;top:50%;transform:translateY(-50%);pointer-events:none;font-size:11px;color:var(--muted)}
+
+/* PRODUCT GRID */
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:28px}
+.product-card{background:#fff;border-radius:12px;overflow:hidden;border:1px solid #e5dfd5;transition:all .3s ease;display:flex;flex-direction:column;position:relative}
+.product-card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(13,12,11,0.08);border-color:var(--sand)}
+.card-media{position:relative;aspect-ratio:1.15;background:#161616;overflow:hidden}
+.card-media img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.product-card:hover .card-media img{transform:scale(1.06)}
+.card-badge{position:absolute;top:14px;left:14px;background:var(--ink);color:var(--sand);font-size:10px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;padding:5px 12px;border-radius:999px;z-index:2}
+.card-badge.gold{background:var(--sand);color:var(--ink)}
+.card-badge.red{background:#b83232;color:#fff}
+.card-wishlist{position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,0.9);display:grid;place-items:center;z-index:2;cursor:pointer;transition:transform .2s,background .2s}
+.card-wishlist:hover{transform:scale(1.1);background:#fff}
+.card-wishlist svg{width:16px;height:16px;fill:none;stroke:var(--ink);transition:fill .2s,stroke .2s}
+.card-wishlist.active svg{fill:#b83232;stroke:#b83232}
+.quick-view-btn{position:absolute;bottom:14px;left:14px;right:14px;background:rgba(13,12,11,0.85);backdrop-filter:blur(6px);color:#fff;border-radius:999px;padding:10px;font-size:12px;font-weight:500;text-align:center;opacity:0;transform:translateY(8px);transition:all .25s ease;z-index:2;cursor:pointer}
+.product-card:hover .quick-view-btn{opacity:1;transform:translateY(0)}
+.quick-view-btn:hover{background:var(--sand);color:var(--ink)}
+
+.card-details{padding:20px;display:flex;flex-direction:column;flex-grow:1}
+.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.card-category{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.card-rating{display:flex;align-items:center;gap:4px;font-size:12px;color:var(--muted)}
+.card-rating svg{width:12px;height:12px;fill:#d49b29;stroke:none}
+.card-title{font-family:var(--serif);font-size:18px;font-weight:500;margin-bottom:6px;color:var(--ink);line-height:1.2}
+.card-desc{font-size:12px;color:var(--muted);margin-bottom:14px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+.card-sizes{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+.size-chip{width:32px;height:28px;border-radius:4px;border:1px solid #dcd7ce;display:grid;place-items:center;font-size:11px;font-weight:500;color:var(--ink);cursor:pointer;transition:all .15s}
+.size-chip:hover,.size-chip.selected{background:var(--ink);color:var(--sand);border-color:var(--ink)}
+
+.card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:14px;border-top:1px solid #f0eae1}
+.price-wrap{display:flex;flex-direction:column}
+.price-current{font-size:17px;font-weight:700;color:var(--ink)}
+.price-row{display:flex;align-items:center;gap:8px}
+.price-orig{font-size:12px;color:var(--muted-light);text-decoration:line-through}
+.price-discount{font-size:10.5px;color:var(--success);font-weight:600}
+.add-bag-btn{background:var(--sand);color:var(--ink);padding:9px 18px;border-radius:999px;font-size:12.5px;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:all .2s;cursor:pointer}
+.add-bag-btn:hover{background:var(--ink);color:var(--sand);transform:translateY(-1px)}
+.add-bag-btn svg{width:14px;height:14px}
+
+/* SNEAKER INNOVATION / HIGHLIGHTS SECTION */
+.tech-section{padding:80px 6.8vw;background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.tech-header{max-width:600px;margin-bottom:50px}
+.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.tech-box{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:34px 28px;transition:all .3s}
+.tech-box:hover{background:rgba(255,255,255,0.07);border-color:var(--sand);transform:translateY(-4px)}
+.tech-num{font-family:var(--serif);font-size:28px;color:var(--sand);margin-bottom:16px;opacity:.9}
+.tech-box h3{font-family:var(--serif);font-size:22px;margin-bottom:12px;font-weight:400}
+.tech-box p{font-size:13.5px;line-height:1.6;color:rgba(255,255,255,0.7)}
+
+/* STORY SECTION (ORIGINAL LAYOUT WITH ENHANCEMENTS) */
+.story{display:grid;grid-template-columns:39.6% 1fr 38%;min-height:30vw}
+.story>img{width:100%;height:100%;object-fit:cover}
+.story-mid{display:flex;flex-direction:column;justify-content:center;padding:2vw 3vw 2vw 2.9vw;background:var(--cream)}
+.story-mid p{font-size:13.5px;line-height:1.55;color:var(--muted);margin:16px 0 22px;max-width:320px}
+.story-mid .btn{align-self:flex-start;padding:12px 26px;font-size:13px}
+.step{position:relative;overflow:hidden}
+.step img{width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.tag-step{top:12%;right:7%;font-size:27px;transform:rotate(-12deg)}
+
+/* REVIEWS & COMMUNITY SECTION */
+.reviews-section{padding:80px 6.8vw;background:var(--cream-card);border-top:1px solid #e2ddd3;border-bottom:1px solid #e2ddd3}
+.reviews-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:44px;flex-wrap:wrap;gap:20px}
+.rating-pill{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #ded9ce;padding:10px 22px;border-radius:999px}
+.rating-pill .stars{display:flex;gap:3px;color:#d49b29}
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.review-card{background:#fff;padding:28px;border-radius:12px;border:1px solid #e8e3d8;box-shadow:0 4px 16px rgba(0,0,0,0.02)}
+.review-stars{display:flex;gap:3px;margin-bottom:12px;color:#d49b29}
+.review-text{font-size:13.5px;line-height:1.6;color:var(--ink);margin-bottom:18px;font-style:italic}
+.review-author{display:flex;justify-content:space-between;align-items:center;font-size:12px;border-top:1px solid #f0eae1;padding-top:14px}
+.author-name{font-weight:600;color:var(--ink)}
+.author-city{color:var(--muted)}
+.verified-tag{font-size:10px;color:var(--success);font-weight:600;display:flex;align-items:center;gap:4px}
+
+/* CTA SECTION (ORIGINAL DESIGN PRESERVED) */
+.cta{display:none} /* desktop keeps it hidden or shows based on query, we make it responsive */
+@media(min-width:821px){
+  .cta-desktop{display:block;position:relative;background:#0d0c0b;color:#fff;overflow:hidden;padding:70px 6.8vw}
+  .cta-desktop-bg{position:absolute;right:0;top:0;bottom:0;width:50%;object-fit:cover;mask-image:linear-gradient(90deg,transparent 0,#000 45%)}
+  .cta-desktop-in{position:relative;z-index:2;max-width:540px}
+  .cta-desktop h2{font-size:clamp(36px,3.8vw,52px);margin:14px 0 14px}
+  .cta-desktop p{font-size:16px;color:rgba(255,255,255,0.8);margin-bottom:28px}
+  .cta-trust{display:flex;gap:24px;font-size:13px;align-items:center;margin-top:28px;color:rgba(255,255,255,0.75)}
+  .cta-trust span{display:flex;gap:8px;align-items:center}
+  .cta-trust svg{width:20px;height:20px;fill:none;stroke:#fff;stroke-width:1.4}
+}
+
+/* FOOTER */
+footer{background:var(--ink);color:rgba(255,255,255,.6);padding:60px 6.8vw 30px;font-size:13px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:40px;margin-bottom:50px}
+.footer-brand .logo{margin-bottom:14px}
+.footer-desc{max-width:300px;line-height:1.5;color:rgba(255,255,255,0.6);margin-bottom:20px;font-size:13px}
+.footer-col h4{color:#fff;font-size:14px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px;font-weight:600}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{color:rgba(255,255,255,0.6);transition:color .2s}
+.footer-col a:hover{color:var(--sand)}
+.newsletter-form{display:flex;gap:8px;margin-top:12px}
+.newsletter-input{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.2);color:#fff;padding:10px 16px;border-radius:999px;font-size:13px;flex-grow:1}
+.newsletter-input:focus{border-color:var(--sand);outline:none}
+.newsletter-btn{background:var(--sand);color:var(--ink);border-radius:999px;padding:10px 20px;font-size:13px;font-weight:600;cursor:pointer;transition:background .2s}
+.newsletter-btn:hover{background:#dfbe8c}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;color:rgba(255,255,255,0.5);font-size:12px}
+.made-tag{display:flex;align-items:center;gap:8px;color:#fff}
+.made-tag .mark{width:24px;height:auto}
+.flag{display:inline-block;height:2px;width:32px;background:linear-gradient(90deg,#ff9933 33%,#fff 33% 66%,#138808 66%);margin-left:6px;vertical-align:middle}
+
+/* SLIDE-OVER CART DRAWER */
+.drawer-backdrop{position:fixed;inset:0;background:rgba(13,12,11,0.65);backdrop-filter:blur(4px);z-index:998;opacity:0;pointer-events:none;transition:opacity .3s ease}
+.drawer-backdrop.open{opacity:1;pointer-events:auto}
+.cart-drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,92vw);background:#fff;z-index:999;box-shadow:-10px 0 30px rgba(0,0,0,0.25);transform:translateX(100%);transition:transform .35s cubic-bezier(0.16, 1, 0.3, 1);display:flex;flex-direction:column}
+.cart-drawer.open{transform:translateX(0)}
+.cart-header{padding:22px 24px;border-bottom:1px solid #eae5de;display:flex;justify-content:space-between;align-items:center}
+.cart-header h3{font-family:var(--serif);font-size:22px;color:var(--ink)}
+.cart-close{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;cursor:pointer;color:var(--ink);transition:background .2s}
+.cart-close:hover{background:#f2eee8}
+
+.free-ship-bar{background:var(--sand-light);padding:10px 24px;font-size:12px;color:var(--ink);border-bottom:1px solid #ebd8b9}
+.free-ship-progress{height:4px;background:#e2cbb1;border-radius:2px;margin-top:6px;overflow:hidden}
+.free-ship-fill{height:100%;background:var(--ink);width:100%;transition:width .3s}
+
+.cart-items{flex-grow:1;overflow-y:auto;padding:20px 24px}
+.cart-empty{text-align:center;padding:50px 20px;color:var(--muted)}
+.cart-empty svg{width:48px;height:48px;stroke:var(--muted);stroke-width:1;margin-bottom:16px}
+.cart-item{display:grid;grid-template-columns:72px 1fr auto;gap:16px;padding-bottom:18px;margin-bottom:18px;border-bottom:1px solid #f0eae1;align-items:center}
+.cart-item-img{width:72px;height:72px;border-radius:8px;object-fit:cover;background:#111}
+.cart-item-info h4{font-size:14px;font-weight:600;margin-bottom:4px;color:var(--ink);line-height:1.2}
+.cart-item-meta{font-size:11.5px;color:var(--muted);margin-bottom:8px}
+.cart-qty-row{display:flex;align-items:center;gap:10px}
+.qty-btn{width:24px;height:24px;border-radius:4px;border:1px solid #dcd7ce;display:grid;place-items:center;font-size:14px;cursor:pointer;background:#fff;transition:all .15s}
+.qty-btn:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.qty-val{font-size:13px;font-weight:600;min-width:18px;text-align:center}
+.cart-item-price{font-size:14px;font-weight:700;color:var(--ink);text-align:right}
+.cart-item-del{color:var(--muted-light);cursor:pointer;font-size:11px;margin-top:8px;display:block;transition:color .2s}
+.cart-item-del:hover{color:#b83232}
+
+.cart-foot{padding:20px 24px;border-top:1px solid #eae5de;background:var(--cream-card)}
+.promo-row{display:flex;gap:8px;margin-bottom:16px}
+.promo-input{flex-grow:1;padding:8px 14px;border-radius:6px;border:1px solid #dcd7ce;font-size:12px;text-transform:uppercase}
+.promo-input:focus{border-color:var(--ink);outline:none}
+.promo-btn{padding:8px 16px;border-radius:6px;background:var(--ink);color:var(--sand);font-size:12px;font-weight:600;cursor:pointer}
+.cart-summary-row{display:flex;justify-content:space-between;font-size:13px;margin-bottom:8px;color:var(--muted)}
+.cart-summary-row.total{font-size:17px;font-weight:700;color:var(--ink);margin-top:12px;padding-top:12px;border-top:1px solid #e2ddd3}
+.checkout-btn{width:100%;margin-top:16px;padding:14px;font-size:15px;background:var(--ink);color:var(--sand);font-weight:600;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:10px;cursor:pointer;transition:all .2s}
+.checkout-btn:hover{background:#23211e;color:#fff}
+
+/* QUICK VIEW / PRODUCT MODAL */
+.modal-backdrop{position:fixed;inset:0;background:rgba(13,12,11,0.7);backdrop-filter:blur(5px);z-index:1000;opacity:0;pointer-events:none;transition:opacity .3s ease;display:grid;place-items:center;padding:20px}
+.modal-backdrop.open{opacity:1;pointer-events:auto}
+.product-modal{background:#fff;border-radius:16px;overflow:hidden;max-width:960px;width:100%;max-height:90vh;display:grid;grid-template-columns:1.1fr 1fr;position:relative;box-shadow:0 24px 60px rgba(0,0,0,0.3);transform:scale(0.96);transition:transform .3s ease}
+.modal-backdrop.open .product-modal{transform:scale(1)}
+.modal-close{position:absolute;top:16px;right:16px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,0.9);display:grid;place-items:center;z-index:10;cursor:pointer;color:var(--ink);transition:all .2s}
+.modal-close:hover{background:var(--ink);color:var(--sand)}
+
+.modal-media{background:#111;position:relative;display:flex;flex-direction:column}
+.modal-main-img{width:100%;height:100%;object-fit:cover;min-height:360px}
+.modal-thumbs{position:absolute;bottom:16px;left:16px;display:flex;gap:10px;z-index:2}
+.modal-thumb{width:54px;height:54px;border-radius:6px;object-fit:cover;border:2px solid rgba(255,255,255,0.4);cursor:pointer;transition:all .2s;background:#000}
+.modal-thumb.active{border-color:var(--sand);transform:scale(1.05)}
+
+.modal-content{padding:36px 32px;overflow-y:auto;display:flex;flex-direction:column}
+.modal-eyebrow{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--sand-dark);font-weight:600;margin-bottom:8px}
+.modal-title{font-family:var(--serif);font-size:26px;color:var(--ink);margin-bottom:10px;line-height:1.2}
+.modal-price-row{display:flex;align-items:baseline;gap:12px;margin-bottom:16px}
+.modal-price{font-size:24px;font-weight:700;color:var(--ink)}
+.modal-orig{font-size:15px;color:var(--muted-light);text-decoration:line-through}
+.modal-disc{background:rgba(34,134,58,0.12);color:var(--success);padding:3px 10px;border-radius:4px;font-size:12px;font-weight:600}
+.modal-desc{font-size:13.5px;line-height:1.6;color:var(--muted);margin-bottom:22px}
+
+.modal-section-title{font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--ink);margin-bottom:8px;display:flex;justify-content:space-between}
+.modal-section-title span.guide-link{color:var(--sand-dark);cursor:pointer;text-decoration:underline;text-transform:none;letter-spacing:normal}
+.color-swatches{display:flex;gap:10px;margin-bottom:20px}
+.swatch{width:28px;height:28px;border-radius:50%;cursor:pointer;position:relative;border:2px solid transparent;transition:transform .2s}
+.swatch.active{transform:scale(1.15);border-color:var(--ink)}
+.size-picker{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.size-opt{width:42px;height:38px;border-radius:6px;border:1px solid #dcd7ce;display:grid;place-items:center;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s}
+.size-opt:hover,.size-opt.active{background:var(--ink);color:var(--sand);border-color:var(--ink)}
+
+.modal-actions{display:flex;gap:12px;margin-top:auto;padding-top:18px;border-top:1px solid #f0eae1}
+.modal-actions .btn{flex-grow:1;padding:14px 20px}
+.pincode-check{margin-top:18px;background:var(--cream);padding:12px 16px;border-radius:8px;display:flex;align-items:center;gap:10px;font-size:12px}
+.pincode-check input{border:1px solid #d4cec4;background:#fff;padding:6px 10px;border-radius:4px;width:100px;font-size:12px}
+.pincode-check button{background:var(--ink);color:var(--sand);padding:6px 12px;border-radius:4px;font-size:11px;font-weight:600;cursor:pointer}
+
+/* CHECKOUT MODAL */
+.checkout-modal{background:#fff;border-radius:16px;max-width:760px;width:100%;max-height:92vh;overflow-y:auto;padding:36px;box-shadow:0 24px 60px rgba(0,0,0,0.3);position:relative}
+.checkout-steps{display:flex;gap:16px;margin-bottom:28px;border-bottom:1px solid #eee;padding-bottom:16px}
+.chk-step{font-size:13px;font-weight:600;color:var(--muted);display:flex;align-items:center;gap:6px}
+.chk-step.active{color:var(--ink)}
+.chk-step span{width:22px;height:22px;border-radius:50%;background:#eee;color:var(--muted);display:grid;place-items:center;font-size:11px}
+.chk-step.active span{background:var(--sand);color:var(--ink);font-weight:700}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-group.full{grid-column:1/-1}
+.form-group label{font-size:12px;font-weight:600;color:var(--ink)}
+.form-group input,.form-group select{padding:10px 14px;border:1px solid #dcd7ce;border-radius:6px;font-size:13px}
+.form-group input:focus{border-color:var(--ink);outline:none}
+
+.pay-options{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px}
+.pay-opt{border:1px solid #dcd7ce;border-radius:8px;padding:16px;text-align:center;cursor:pointer;transition:all .2s}
+.pay-opt:hover,.pay-opt.active{border-color:var(--ink);background:var(--sand-light)}
+.pay-opt svg{width:24px;height:24px;margin-bottom:6px}
+.pay-opt span{display:block;font-size:12px;font-weight:600;color:var(--ink)}
+
+/* SEARCH MODAL */
+.search-modal{background:#fff;border-radius:16px;max-width:680px;width:100%;max-height:85vh;overflow:hidden;padding:28px;box-shadow:0 24px 60px rgba(0,0,0,0.3);display:flex;flex-direction:column}
+.search-input-wrap{position:relative;margin-bottom:20px}
+.search-input-wrap svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:20px;height:20px;stroke:var(--muted)}
+.search-input{width:100%;padding:14px 20px 14px 48px;border:1px solid #dcd7ce;border-radius:999px;font-size:15px}
+.search-input:focus{border-color:var(--ink);outline:none}
+.search-tags{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;align-items:center}
+.search-tags span.title{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+.search-tag{background:var(--cream);border-radius:999px;padding:5px 14px;font-size:12px;color:var(--ink);cursor:pointer;transition:all .2s}
+.search-tag:hover{background:var(--ink);color:var(--sand)}
+.search-results{flex-grow:1;overflow-y:auto;display:flex;flex-direction:column;gap:12px;max-height:400px}
+.search-item{display:flex;align-items:center;gap:16px;padding:10px;border-radius:8px;transition:background .2s;cursor:pointer}
+.search-item:hover{background:var(--cream)}
+.search-item img{width:50px;height:50px;border-radius:6px;object-fit:cover;background:#111}
+.search-item-info h4{font-size:14px;font-weight:600;color:var(--ink)}
+.search-item-info p{font-size:12px;color:var(--muted)}
+.search-item-price{margin-left:auto;font-size:14px;font-weight:700;color:var(--ink)}
+
+/* TOAST NOTIFICATION */
+.toast-container{position:fixed;bottom:24px;right:24px;z-index:2000;display:flex;flex-direction:column;gap:10px;pointer-events:none}
+.toast{background:var(--ink);color:#fff;padding:14px 22px;border-radius:999px;font-size:13.5px;display:flex;align-items:center;gap:10px;box-shadow:0 12px 30px rgba(0,0,0,0.25);transform:translateY(20px);opacity:0;transition:all .3s cubic-bezier(0.16, 1, 0.3, 1);pointer-events:auto;border-left:3px solid var(--sand)}
+.toast.show{transform:translateY(0);opacity:1}
+.toast svg{width:18px;height:18px;stroke:var(--sand);flex-shrink:0}
+
+/* MOBILE NAV DRAWER */
+.mobile-nav{position:fixed;top:0;left:0;bottom:0;width:min(320px,85vw);background:var(--ink);color:#fff;z-index:999;transform:translateX(-100%);transition:transform .35s cubic-bezier(0.16,1,0.3,1);padding:30px 24px;display:flex;flex-direction:column}
+.mobile-nav.open{transform:translateX(0)}
+.mobile-nav-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:36px}
+.mobile-nav-links{display:flex;flex-direction:column;gap:20px;font-size:18px}
+.mobile-nav-links a{color:rgba(255,255,255,0.85);transition:color .2s}
+.mobile-nav-links a:hover{color:var(--sand)}
+.mobile-nav-foot{margin-top:auto;border-top:1px solid rgba(255,255,255,0.15);padding-top:24px;font-size:13px;color:rgba(255,255,255,0.6)}
+
+/* FULL RESPONSIVE MOBILE VIEW (ZERO CUT-OFFS, ZERO OVERLAPS, 100% COMPLETE SITE) */
+@media(max-width:820px){
+ /* TOP ANNOUNCEMENT TICKER */
+ .ticker-bar{display:block;background:var(--ink-soft);color:var(--sand);padding:7px 0;font-size:10px;letter-spacing:.06em;overflow:hidden;border-bottom:1px solid rgba(232,201,155,0.15);position:relative;z-index:25}
+ .ticker-track{display:flex;width:max-content;animation:ticker 25s linear infinite;gap:18px}
+ .ticker-item{display:flex;align-items:center;gap:6px;white-space:nowrap}
+
+ /* TOP NAVIGATION */
+ nav{padding:12px 16px;position:absolute;z-index:20;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between}
+ .links,.nav-r .btn{display:none}
+ .burger{display:block}
+ .logo{font-size:17px;letter-spacing:.16em}
+ .logo .mark{width:28px}
+ .nav-r{gap:14px}
+ .icon{width:18px;height:18px}
+
+ /* HERO SECTION */
+ .hero{position:relative;background:#0d0c0b;color:#fff;overflow:hidden;height:auto;min-height:450px;display:flex;flex-direction:column}
+ .hero-img{position:absolute;inset:auto 0 0 auto;right:-4%;bottom:0;width:94%;height:66%;object-fit:cover;object-position:72% 55%;mask-image:linear-gradient(180deg,transparent 0,#000 32%);-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 32%);z-index:1}
+ .hero::before{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(13,12,11,.92) 0%,rgba(13,12,11,.65) 45%,transparent 80%),linear-gradient(180deg,rgba(13,12,11,.6) 0%,transparent 25%)}
+ 
+ /* HERO COPY */
+ .hero-copy{position:relative;z-index:4;padding:65px 16px 0;max-width:62vw}
+ .eyebrow{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--sand);margin-bottom:4px}
+ h1{font-family:var(--serif);font-size:clamp(30px,7.8vw,40px);line-height:1.02;margin:6px 0 10px;letter-spacing:-.01em;font-weight:500}
+ h1 span{color:var(--sand);display:block}
+ .hero-copy p.lede{font-size:12px;line-height:1.45;max-width:230px;margin-bottom:14px;color:rgba(255,255,255,0.85)}
+ .hero-copy .btn{padding:10px 20px;font-size:12px;border-radius:999px;gap:6px}
+
+ /* 1ST PREVIEW INDICATOR ONLY */
+ .side{position:absolute;z-index:4;right:18px;top:60px;font-size:13.5px;color:var(--sand);font-weight:600;display:flex;flex-direction:column;align-items:center}
+ .side i{display:none}
+
+ /* HANDWRITTEN SCRIPT TAG (NEVER CUT OFF, COMFORTABLY POSITIONED) */
+ .tag-hero{position:absolute;z-index:4;right:22px;top:clamp(135px, 32vw, 165px);font-size:clamp(15px, 3.8vw, 18px);line-height:1.05;color:rgba(255,255,255,0.9);transform:rotate(-7deg);transform-origin:right center;text-align:right}
+ .tag-hero::after{content:"";display:block;width:24px;height:1px;background:currentColor;margin-top:3px;margin-left:auto}
+
+ /* FEATURES BAR (GRID SYSTEM: NEVER CUT OFF, PERFECT ON 320px-400px) */
+ .feats{position:relative;z-index:4;display:grid;grid-template-columns:repeat(3, 1fr);padding:10px 14px 14px;margin-top:auto;background:linear-gradient(180deg,transparent,rgba(13,12,11,.95) 45%);gap:4px;width:100%;box-sizing:border-box}
+ .feats div{padding:0 4px;gap:6px;display:flex;align-items:center;min-width:0;font-size:10.5px;line-height:1.15}
+ .feats div+div{border-left:1px solid rgba(255,255,255,.2)}
+ .feats svg{width:18px;height:18px;fill:none;stroke:#fff;stroke-width:1.2;flex-shrink:0}
+ .feats span{white-space:normal;word-break:normal}
+
+ /* FEATURED COLLECTION SECTION (3 CARDS IN A ROW) */
+ .collection{display:grid;grid-template-columns:1fr 1fr;padding:24px 16px 20px;gap:10px;align-items:end;background:var(--cream)}
+ .collection>div:first-child{padding-left:0}
+ .collection .label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-weight:600}
+ h2{font-family:var(--serif);font-size:clamp(24px,6.8vw,34px);line-height:1.02;letter-spacing:-.01em;margin-top:4px}
+ h2 em{font-style:normal;color:var(--sand)}
+ .coll-text{border:0;margin:0;padding:0;font-size:11px;line-height:1.35;color:var(--muted)}
+ .coll-text a{font-size:12px;font-weight:600;display:inline-flex;align-items:center;gap:5px;margin-top:6px;color:var(--ink)}
+ .coll-text a svg{width:11px;height:11px}
+
+ .cards{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+ .card{position:relative;aspect-ratio:1;border-radius:6px;overflow:hidden;background:#111;color:#fff}
+ .card img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+ .card div{position:absolute;z-index:2;left:6px;right:6px;bottom:6px;display:flex;justify-content:space-between;align-items:flex-end}
+ .card h3{font-family:var(--serif);font-size:clamp(11px,2.9vw,13.5px);font-weight:400;line-height:1.05}
+ .card small{display:block;font-size:clamp(6.5px,1.6vw,7.5px);letter-spacing:.04em;text-transform:uppercase;margin-top:2px;color:var(--sand);opacity:.9}
+ .card .circ{width:20px;height:20px;border:1px solid rgba(255,255,255,.7);border-radius:50%;display:grid;place-items:center;flex-shrink:0}
+ .card .circ svg{width:9px;height:9px}
+
+ /* FULL CATALOG SECTION (MOBILE READY & ACTIVE) */
+ .catalog-section{display:block;padding:32px 16px 36px;background:var(--cream);border-top:1px solid #ddd7cd}
+ .catalog-header{display:flex;flex-direction:column;gap:12px;align-items:flex-start;margin-bottom:20px;border-bottom:1px solid #ddd7cd;padding-bottom:14px}
+ .catalog-title h2{font-size:clamp(22px,6.2vw,30px);margin-top:4px}
+ .catalog-controls{width:100%;display:flex;flex-direction:column;gap:8px;align-items:stretch}
+ .filter-tabs{display:flex;gap:5px;overflow-x:auto;padding:3px;border-radius:999px;background:rgba(13,12,11,0.06);-webkit-overflow-scrolling:touch;scrollbar-width:none}
+ .filter-tabs::-webkit-scrollbar{display:none}
+ .filter-tab{padding:6px 12px;font-size:11px;white-space:nowrap;flex-shrink:0}
+ .sort-wrap{width:100%}
+ .sort-select{width:100%;padding:7px 28px 7px 12px;font-size:11.5px}
+
+ /* CATALOG PRODUCTS GRID */
+ .products-grid{display:grid;grid-template-columns:1fr;gap:16px}
+ .product-card{border-radius:10px;box-shadow:0 4px 16px rgba(0,0,0,0.04)}
+ .card-media{aspect-ratio:1.25}
+ .card-details{padding:14px}
+ .card-title{font-size:16px;margin-bottom:4px}
+ .card-desc{font-size:11.5px;line-height:1.4;margin-bottom:10px}
+ .card-sizes{gap:5px;margin-bottom:10px}
+ .size-chip{width:32px;height:28px;font-size:11px}
+ .price-current{font-size:15px}
+ .add-bag-btn{padding:8px 14px;font-size:11.5px}
+
+ /* SNEAKER TECH SECTION */
+ .tech-section{display:block;padding:38px 16px;background:var(--ink);color:#fff}
+ .tech-header{margin-bottom:22px}
+ .tech-header h2{font-size:clamp(22px,6.2vw,30px);margin-top:6px}
+ .tech-header p{font-size:12px;line-height:1.5;color:rgba(255,255,255,0.7);margin-top:8px}
+ .tech-grid{display:grid;grid-template-columns:1fr;gap:14px}
+ .tech-box{padding:18px 16px;border-radius:10px}
+ .tech-num{font-size:20px;margin-bottom:6px}
+ .tech-box h3{font-size:17px;margin-bottom:6px}
+ .tech-box p{font-size:12px;line-height:1.45}
+
+ /* STORY SECTION (NEVER CUT OFF, AUTO HEIGHT) */
+ .story{display:block;position:relative;min-height:0;height:auto;padding:0;overflow:hidden;background:var(--cream)}
+ .story>img.man{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 30%}
+ .story::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(242,238,232,.97) 0%,rgba(242,238,232,.85) 50%,transparent 80%);z-index:1}
+ .story-mid{position:relative;z-index:2;padding:32px 16px 36px;max-width:75%;display:flex;flex-direction:column}
+ .story-mid .label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+ .story-mid h2{margin:6px 0 8px;font-size:clamp(22px,6.2vw,30px)}
+ .story-mid p{font-size:11.5px;max-width:230px;color:#3a3834;margin:0 0 14px;line-height:1.45}
+ .story-mid .btn{padding:9px 20px;font-size:11.5px;align-self:flex-start}
+ .step{display:none}
+
+ /* COMMUNITY REVIEWS SECTION */
+ .reviews-section{display:block;padding:38px 16px;background:var(--cream-card);border-top:1px solid #e2ddd3;border-bottom:1px solid #e2ddd3}
+ .reviews-head{display:flex;flex-direction:column;gap:10px;align-items:flex-start;margin-bottom:20px}
+ .reviews-head h2{font-size:clamp(22px,6.2vw,30px)}
+ .rating-pill{padding:7px 14px;font-size:11px}
+ .reviews-grid{display:grid;grid-template-columns:1fr;gap:14px}
+ .review-card{padding:18px 16px;border-radius:10px}
+ .review-text{font-size:12px;line-height:1.5;margin-bottom:10px}
+ .review-author{font-size:11px;padding-top:8px}
+
+ /* CTA SECTION */
+ .cta-desktop{display:none!important}
+ .cta{display:block;position:relative;background:#0d0c0b;color:#fff;overflow:hidden;min-height:0;height:auto;padding:0}
+ .cta>img{position:absolute;right:-4%;bottom:0;width:95%;height:68%;object-fit:cover;object-position:78% 50%;mask-image:linear-gradient(180deg,transparent 0,#000 38%);-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 38%)}
+ .cta::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(13,12,11,.88) 0%,rgba(13,12,11,.55) 55%,transparent 85%)}
+ .cta-in{position:relative;z-index:2;padding:26px 16px 42px;max-width:76vw}
+ .cta .eyebrow{font-size:9px;letter-spacing:.22em;color:var(--sand);margin-bottom:4px}
+ .cta h2{font-size:clamp(22px,6.2vw,30px);line-height:1.05;margin:6px 0 8px}
+ .cta p{font-size:11.5px;margin-bottom:14px;color:rgba(255,255,255,0.85);max-width:220px}
+ .cta .btn{padding:10px 22px;font-size:12px}
+ .cta .ex{display:block;text-decoration:underline;text-underline-offset:3px;font-size:11.5px;margin:12px 0 16px;color:rgba(255,255,255,0.9)}
+ .cta .trust{display:flex;gap:10px;font-size:10.5px;align-items:center;color:rgba(255,255,255,0.8)}
+ .cta .trust span{display:flex;gap:4px;align-items:center}
+ .cta .trust svg{width:15px;height:15px}
+ .cta .made{position:absolute;z-index:3;right:14px;bottom:10px;font-size:10px;display:flex;gap:5px;align-items:center;color:rgba(255,255,255,0.85)}
+ .cta .made .mark{width:20px;height:auto}
+ .flag{display:block;height:2px;width:100%;margin-top:2px;background:linear-gradient(90deg,#ff9933 33%,#fff 33% 66%,#138808 66%)}
+
+ /* FOOTER SECTION (FULL & COMPLETE ON MOBILE) */
+ footer{display:block!important;padding:38px 16px 20px;background:var(--ink);color:rgba(255,255,255,0.6);font-size:11.5px}
+ .footer-grid{display:grid;grid-template-columns:1fr;gap:22px;margin-bottom:24px}
+ .footer-brand .logo{margin-bottom:8px}
+ .footer-desc{max-width:none;font-size:11.5px;line-height:1.45;margin-bottom:14px}
+ .footer-col h4{font-size:12.5px;letter-spacing:.06em;margin-bottom:10px;color:#fff}
+ .footer-col ul{list-style:none}
+ .footer-col li{margin-bottom:6px}
+ .footer-col a{font-size:11.5px;color:rgba(255,255,255,0.7)}
+ .newsletter-form{display:flex;gap:6px;margin-top:6px}
+ .newsletter-input{padding:8px 12px;font-size:11.5px}
+ .newsletter-btn{padding:8px 14px;font-size:11.5px}
+ .footer-bottom{display:flex;flex-direction:column;gap:8px;align-items:flex-start;border-top:1px solid rgba(255,255,255,0.1);padding-top:14px;font-size:10.5px}
+
+ /* MODAL RESPONSIVENESS */
+ .product-modal{grid-template-columns:1fr;max-height:95vh}
+ .modal-media{height:250px}
+ .checkout-modal{padding:22px 16px}
+ .form-grid{grid-template-columns:1fr}
+ .pay-options{grid-template-columns:1fr;gap:8px}
+}
+
+@media(min-width:821px) and (max-width:1100px){
+ .collection{grid-template-columns:1fr;gap:24px}.coll-text{border:0;margin:0;padding:0}
+ .links{gap:22px;margin:0}.feats div{padding:0 14px}
+ .tech-grid{grid-template-columns:repeat(2,1fr)}
+ .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<!-- SVG SYMBOLS DEFINITION -->
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="bird" viewBox="0 0 60 48"><path d="M2 8c10 2 18 6 24 12C32 8 44 2 58 2c-6 6-10 11-12 17 4-1 7-1 10 0-5 3-9 6-12 10 2 3 4 5 5 9-6-3-10-6-14-10-3 4-4 9-4 15-4-6-6-12-5-18C12 26 6 18 2 8z"/></symbol>
+<symbol id="ar" viewBox="0 0 16 16"><path d="M2 8h12M9 3l5 5-5 5"/></symbol>
+</defs></svg>
+
+<!-- ANNOUNCEMENT TICKER -->
+<div class="ticker-bar">
+ <div class="ticker-track">
+  <div class="ticker-item"><span>Complimentary Express Shipping Across India</span><span class="dot"></span></div>
+  <div class="ticker-item"><span>Handcrafted with Deccan Plateau Suede & Leather</span><span class="dot"></span></div>
+  <div class="ticker-item"><span>7-Day Hassle-Free Home Trial & Exchanges</span><span class="dot"></span></div>
+  <div class="ticker-item"><span>Use Code <b>DECAN10</b> for 10% Off Your First Order</span><span class="dot"></span></div>
+  <div class="ticker-item"><span>Complimentary Express Shipping Across India</span><span class="dot"></span></div>
+  <div class="ticker-item"><span>Handcrafted with Deccan Plateau Suede & Leather</span><span class="dot"></span></div>
+  <div class="ticker-item"><span>7-Day Hassle-Free Home Trial & Exchanges</span><span class="dot"></span></div>
+  <div class="ticker-item"><span>Use Code <b>DECAN10</b> for 10% Off Your First Order</span><span class="dot"></span></div>
+ </div>
+</div>
+
+<!-- HERO HEADER -->
+<header class="hero" id="home">
+ <img class="hero-img" id="hero-bg" src="assets/hero-navy-sneaker.jpg" alt="Decan navy suede sneaker on stone" fetchpriority="high">
+ <nav>
+  <a class="logo" href="#home"><img class="mark" src="assets/decan-bird-logo.png" alt="Decan Bird Logo">DECAN</a>
+  <div class="links">
+   <a class="on" href="#home">Home</a>
+   <a href="#collection">Shop</a>
+   <a href="#catalog">Collections</a>
+   <a href="#story">About</a>
+   <a href="javascript:void(0)" onclick="openSizeGuideModal()">Size Guide</a>
+  </div>
+  <div class="nav-r">
+   <a href="javascript:void(0)" onclick="openSearchModal()" aria-label="Search" title="Search sneakers"><svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></svg></a>
+   <a href="javascript:void(0)" class="bag" id="cart-nav-btn" onclick="openCartDrawer()" aria-label="Cart" title="Shopping Bag"><svg class="icon" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 016 0v2"/></svg><b id="nav-cart-badge">0</b></a>
+   <a href="#catalog" class="btn btn-sand">Shop Now <svg><use href="#ar"/></svg></a>
+   <button class="burger" id="burger-menu-btn" onclick="toggleMobileNav()" aria-label="Menu"><svg class="icon" viewBox="0 0 24 24" style="width:26px;height:26px"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+ </nav>
+ <div class="hero-copy">
+  <div class="eyebrow" id="hero-eyebrow">More than just sneakers</div>
+  <h1 id="hero-title">FOR A HIGHER <span>GROUND</span></h1>
+  <p class="lede" id="hero-lede">Decan World creates sneakers for those who move with purpose — built on comfort, culture and a bigger story.</p>
+  <a class="btn btn-sand" href="#catalog">Explore Collection <svg><use href="#ar"/></svg></a>
+ </div>
+ <div class="tag tag-hero" id="hero-tag">Built<br>to Move<br>Differently.</div>
+   <div class="side" id="hero-slider-nav">
+  <span class="cur" data-slide="0">01</span>
+ </div>
+ <div class="feats">
+  <div><svg viewBox="0 0 32 32"><path d="M6 26C6 12 14 5 27 5c0 13-7 21-19 21zM6 26L20 12"/></svg><span>Premium<br>Materials</span></div>
+  <div><svg viewBox="0 0 32 32"><path d="M9 24a6 6 0 010-12 8 8 0 0115-2 6 6 0 011 14z"/></svg><span>All Day<br>Comfort</span></div>
+  <div><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="12"/><ellipse cx="16" cy="16" rx="5" ry="12"/><path d="M4 16h24M6 9h20M6 23h20"/></svg><span>Designed<br>for India</span></div>
+ </div>
+</header>
+
+<!-- FEATURED COLLECTION (ORIGINAL 3 CARDS LAYOUT PRESERVED) -->
+<section class="collection" id="collection">
+ <div><div class="label">The Collection</div><h2>Find<br>Your Pair<em>.</em></h2></div>
+ <div class="coll-text">Timeless designs, crafted for everyday adventures. Discover sneakers that fit your journey.<br><a href="#catalog">View All <svg class="arrow" viewBox="0 0 16 16"><use href="#ar"/></svg></a></div>
+  <div class="cards">
+  <a class="card" href="javascript:void(0)" onclick="openProductModal('decan-everyday-navy')">
+   <img src="assets/sneaker-everyday.jpg" alt="Everyday sneaker" loading="lazy">
+   <div><span><h3>Everyday</h3><small>Versatile &amp; Stylish</small></span><i class="circ"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.5"><use href="#ar"/></svg></i></div>
+  </a>
+  <a class="card" href="javascript:void(0)" onclick="openProductModal('decan-classic-cream')">
+   <img src="assets/sneaker-classic.jpg" alt="Classic cream sneaker" loading="lazy">
+   <div><span><h3>Classic</h3><small>Clean &amp; Timeless</small></span><i class="circ"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.5"><use href="#ar"/></svg></i></div>
+  </a>
+  <a class="card" href="javascript:void(0)" onclick="openProductModal('decan-limited-stealth')">
+   <img src="assets/sneaker-limited.jpg" alt="Limited edition black sneaker" loading="lazy">
+   <div><span><h3>Limited Edition</h3><small>Rare Drops</small></span><i class="circ"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.5"><use href="#ar"/></svg></i></div>
+  </a>
+ </div>
+</section>
+
+<!-- FULL INTERACTIVE CATALOG WITH FILTERS & REAL PRODUCTS -->
+<section class="catalog-section" id="catalog">
+ <div class="catalog-header">
+  <div class="catalog-title">
+   <div class="label">Curated Lineup</div>
+   <h2>Sneakers Engineered For Movement<em>.</em></h2>
+  </div>
+  <div class="catalog-controls">
+   <div class="filter-tabs">
+    <button class="filter-tab active" data-category="all" onclick="filterCatalog('all', this)">All Pairs (<span id="count-all">6</span>)</button>
+    <button class="filter-tab" data-category="everyday" onclick="filterCatalog('everyday', this)">Everyday</button>
+    <button class="filter-tab" data-category="classic" onclick="filterCatalog('classic', this)">Classic</button>
+    <button class="filter-tab" data-category="limited" onclick="filterCatalog('limited', this)">Limited Drops</button>
+    <button class="filter-tab" data-category="trail" onclick="filterCatalog('trail', this)">Trail &amp; Weatherproof</button>
+   </div>
+   <div class="sort-wrap">
+    <select class="sort-select" id="catalog-sort" onchange="sortCatalog(this.value)" aria-label="Sort products">
+     <option value="featured">Featured Drops</option>
+     <option value="price-low">Price: Low to High</option>
+     <option value="price-high">Price: High to Low</option>
+     <option value="rating">Highest Rated</option>
+    </select>
+   </div>
+  </div>
+ </div>
+
+ <!-- DYNAMIC PRODUCTS GRID -->
+ <div class="products-grid" id="products-grid-container">
+  <!-- Generated via JavaScript with complete functionality -->
+ </div>
+</section>
+
+<!-- SNEAKER CRAFTSMANSHIP & INNOVATION -->
+<section class="tech-section">
+ <div class="tech-header">
+  <div class="eyebrow" style="color:var(--sand)">Built For Indian Conditions</div>
+  <h2 style="color:#fff;margin-top:10px">The Deccan Anatomy<em>.</em></h2>
+  <p style="color:rgba(255,255,255,0.7);margin-top:14px;font-size:14.5px;line-height:1.6">Designed from the ground up for Indian weather, concrete heat, monsoon streets, and day-long urban movement.</p>
+ </div>
+ <div class="tech-grid">
+  <div class="tech-box">
+   <div class="tech-num">01</div>
+   <h3>Deccan-Tread™ Outsole</h3>
+   <p>Custom vulcanized non-slip rubber formula patterned after Deccan granite rock formations. Unmatched wet-road grip and longevity.</p>
+  </div>
+  <div class="tech-box">
+   <div class="tech-num">02</div>
+   <h3>CloudStep™ Dual Density</h3>
+   <p>Proprietary memory foam insole lined with organic breathable cotton that molds to your arch and stays cool in 40°C heat.</p>
+  </div>
+  <div class="tech-box">
+   <div class="tech-num">03</div>
+   <h3>HydroShield Suede</h3>
+   <p>Hand-selected Indian nubuck and full-grain leathers treated with eco-friendly nano-coating that repels dust, tea spills, and light rain.</p>
+  </div>
+ </div>
+</section>
+
+<!-- STORY SECTION (ORIGINAL DESIGN PRESERVED WITH MODAL EXTENSION) -->
+<section class="story" id="story">
+ <img class="man" src="assets/story-man-sitting.jpg" alt="Man sitting on a stone wall wearing Decan sneakers" loading="lazy">
+ <div class="story-mid">
+  <div class="label">Our Story</div>
+  <h2>A Deeper<br>Story Inside<em>.</em></h2>
+  <p>Decan World is more than sneakers — it’s a mindset. A belief in progress, creativity and going beyond the ordinary. Designed in India, for a global generation.</p>
+  <button class="btn btn-dark" onclick="openStoryModal()">Know Our Story <svg><use href="#ar"/></svg></button>
+ </div>
+ <div class="step"><img src="assets/sneaker-heel-step.jpg" alt="Back view of Decan sneaker with bird logo" loading="lazy"><div class="tag tag-step">Step<br>Into More.</div></div>
+</section>
+
+<!-- COMMUNITY REVIEWS SECTION -->
+<section class="reviews-section">
+ <div class="reviews-head">
+  <div>
+   <div class="label">Customer Reviews</div>
+   <h2>Worn Across The Subcontinent<em>.</em></h2>
+  </div>
+  <div class="rating-pill">
+   <div class="stars">★★★★★</div>
+   <span style="font-size:13px;font-weight:600;color:var(--ink)">4.9 / 5.0</span>
+   <span style="font-size:12px;color:var(--muted)">(2,450+ Verified Indian Buyers)</span>
+  </div>
+ </div>
+ <div class="reviews-grid">
+  <div class="review-card">
+   <div class="review-stars">★★★★★</div>
+   <p class="review-text">"Walked 18,000 steps across Bangalore on day one. Zero blisters, zero heel pain. The navy suede has a subtle texture that looks incredible in person."</p>
+   <div class="review-author">
+    <div>
+     <div class="author-name">Aditya Varma</div>
+     <div class="author-city">Bengaluru • Everyday Navy Suede</div>
+    </div>
+    <span class="verified-tag">✓ Verified</span>
+   </div>
+  </div>
+  <div class="review-card">
+   <div class="review-stars">★★★★★</div>
+   <p class="review-text">"The leather quality is easily comparable to foreign brands that charge 20K. Love the bird logo on the heel counter. Packaging was ultra-premium too."</p>
+   <div class="review-author">
+    <div>
+     <div class="author-name">Meera Nair</div>
+     <div class="author-city">Mumbai • Classic Off-White</div>
+    </div>
+    <span class="verified-tag">✓ Verified</span>
+   </div>
+  </div>
+  <div class="review-card">
+   <div class="review-stars">★★★★★</div>
+   <p class="review-text">"Snagged pair #142 of the Limited Stealth drop. The all-black aesthetic is surgical. Fits true to UK size. Decan World is putting India on the sneakerhead map."</p>
+   <div class="review-author">
+    <div>
+     <div class="author-name">Karan Singhania</div>
+     <div class="author-city">Hyderabad • Limited Stealth Edition</div>
+    </div>
+    <span class="verified-tag">✓ Verified</span>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- DESKTOP CTA SECTION -->
+<section class="cta-desktop">
+ <img class="cta-desktop-bg" src="assets/cta-sneaker.jpg" alt="Decan Sneaker" loading="lazy">
+ <div class="cta-desktop-in">
+  <div class="eyebrow">Step into what's next</div>
+  <h2>Find Your Next<br>Everyday Pair<em>.</em></h2>
+  <p>Premium comfort. Made to move with you across concrete, trails and airport terminals.</p>
+  <a class="btn btn-sand" href="#catalog">Shop Bestsellers <svg><use href="#ar"/></svg></a>
+  <div class="cta-trust">
+   <span><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM8.5 12l2.5 2.5 4.5-5"/></svg>Secure Encrypted Checkout</span>
+   <span><svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4v10l-9 4-9-4zM3 7l9 4 9-4M12 11v10"/></svg>7-Day Free Home Exchange</span>
+  </div>
+ </div>
+</section>
+
+<!-- MOBILE CTA SECTION (ORIGINAL PRESERVED) -->
+<section class="cta">
+ <img src="assets/cta-sneaker.jpg" alt="" loading="lazy">
+ <div class="cta-in">
+  <div class="eyebrow">Step into what’s next</div>
+  <h2>Find Your Next<br>Everyday Pair<em>.</em></h2>
+  <p>Premium comfort. Made to move with you.</p>
+  <a class="btn btn-sand" href="#catalog">Shop Bestsellers <svg><use href="#ar"/></svg></a>
+  <a class="ex" href="#catalog">Explore all sneakers →</a>
+  <div class="trust">
+   <span><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM8.5 12l2.5 2.5 4.5-5"/></svg>Secure checkout</span>
+   <span style="opacity:.4">|</span>
+   <span><svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4v10l-9 4-9-4zM3 7l9 4 9-4M12 11v10"/></svg>Easy returns</span>
+  </div>
+ </div>
+ <div class="made"><img class="mark" src="assets/decan-bird-logo.png" alt=""><span>Designed in India<i class="flag"></i></span></div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+ <div class="footer-grid">
+  <div class="footer-brand">
+   <a class="logo" href="#home" style="margin-bottom:14px"><img class="mark" src="assets/decan-bird-logo.png" alt="Decan">DECAN WORLD</a>
+   <p class="footer-desc">Crafting elevated footwear rooted in Indian heritage, engineered with modern ergonomics for those who dare to step on higher ground.</p>
+   <div class="made-tag">
+    <img class="mark" src="assets/decan-bird-logo.png" alt="">
+    <span>Designed in India for a global generation<i class="flag"></i></span>
+   </div>
+  </div>
+  <div class="footer-col">
+   <h4>Collections</h4>
+   <ul>
+    <li><a href="javascript:void(0)" onclick="filterCatalog('everyday')">Everyday Line</a></li>
+    <li><a href="javascript:void(0)" onclick="filterCatalog('classic')">Classic Leather</a></li>
+    <li><a href="javascript:void(0)" onclick="filterCatalog('limited')">Limited Drops (1/500)</a></li>
+    <li><a href="javascript:void(0)" onclick="filterCatalog('trail')">Trail &amp; Outdoor</a></li>
+    <li><a href="javascript:void(0)" onclick="openSizeGuideModal()">Indian Sizing Chart</a></li>
+   </ul>
+  </div>
+  <div class="footer-col">
+   <h4>Customer Care</h4>
+   <ul>
+    <li><a href="javascript:void(0)" onclick="showToast('Orders shipped via Bluedart Express with tracking SMS')">Track Your Order</a></li>
+    <li><a href="javascript:void(0)" onclick="showToast('Free 7-day pickup & replacement service available')">Exchange &amp; Returns</a></li>
+    <li><a href="javascript:void(0)" onclick="openStoryModal()">Our Craft &amp; Materials</a></li>
+    <li><a href="javascript:void(0)" onclick="showToast('WhatsApp Support: +91 98490 12345 (10 AM - 7 PM)')">WhatsApp Concierge</a></li>
+    <li><a href="javascript:void(0)" onclick="showToast('Email: support@decanworld.in')">Contact Us</a></li>
+   </ul>
+  </div>
+  <div class="footer-col">
+   <h4>The Inner Circle</h4>
+   <p style="font-size:12.5px;color:rgba(255,255,255,0.6);margin-bottom:10px">Get VIP access to limited drops, warehouse secret sales, and 10% off your initial pair.</p>
+   <form class="newsletter-form" onsubmit="event.preventDefault(); subscribeNewsletter(this)">
+    <input type="email" class="newsletter-input" placeholder="Enter your email" required aria-label="Email address">
+    <button type="submit" class="newsletter-btn">Join</button>
+   </form>
+  </div>
+ </div>
+ <div class="footer-bottom">
+  <div>© 2026 Decan World Footwear Pvt. Ltd. All rights reserved.</div>
+  <div style="display:flex;gap:20px">
+   <a href="javascript:void(0)" onclick="showToast('Privacy Policy: All customer data is 256-bit SSL encrypted')">Privacy Policy</a>
+   <a href="javascript:void(0)" onclick="showToast('Terms: 100% genuine handcrafted leather footwear')">Terms of Service</a>
+   <a href="javascript:void(0)" onclick="showToast('Made with pride in Hyderabad & Bengaluru')">Made in India</a>
+  </div>
+ </div>
+</footer>
+
+<!-- SLIDE-OVER CART DRAWER -->
+<div class="drawer-backdrop" id="cart-backdrop" onclick="closeCartDrawer()"></div>
+<div class="cart-drawer" id="cart-drawer" role="dialog" aria-label="Shopping Bag">
+ <div class="cart-header">
+  <h3>Shopping Bag (<span id="cart-item-count">0</span>)</h3>
+  <button class="cart-close" onclick="closeCartDrawer()" aria-label="Close Bag">✕</button>
+ </div>
+ <div class="free-ship-bar">
+  <div id="free-ship-text">Add items for <b>Free Express Delivery across India</b></div>
+  <div class="free-ship-progress"><div class="free-ship-fill" id="free-ship-fill"></div></div>
+ </div>
+ <div class="cart-items" id="cart-items-container">
+  <!-- Cart items inserted dynamically -->
+ </div>
+ <div class="cart-foot" id="cart-foot">
+  <div class="promo-row">
+   <input type="text" class="promo-input" id="promo-code-input" placeholder="Promo code (e.g. DECAN10)">
+   <button class="promo-btn" onclick="applyPromoCode()">Apply</button>
+  </div>
+  <div class="cart-summary-row"><span>Subtotal</span><span id="cart-subtotal">₹0</span></div>
+  <div class="cart-summary-row" id="promo-discount-row" style="display:none;color:var(--success)"><span>Discount (<span id="promo-name"></span>)</span><span id="promo-discount-val">-₹0</span></div>
+  <div class="cart-summary-row"><span>Express Pan-India Shipping</span><span style="color:var(--success);font-weight:600">FREE</span></div>
+  <div class="cart-summary-row total"><span>Total Amount</span><span id="cart-total">₹0</span></div>
+  <button class="checkout-btn" onclick="openCheckoutModal()">Proceed to Checkout <svg viewBox="0 0 16 16" style="width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6"><use href="#ar"/></svg></button>
+ </div>
+</div>
+
+<!-- QUICK VIEW / PRODUCT DETAIL MODAL -->
+<div class="modal-backdrop" id="product-modal-backdrop" onclick="closeProductModal(event)">
+ <div class="product-modal" id="product-modal">
+  <button class="modal-close" onclick="closeProductModal()" aria-label="Close Product View">✕</button>
+  <div class="modal-media">
+   <img class="modal-main-img" id="modal-img" src="" alt="Sneaker Image">
+   <div class="modal-thumbs" id="modal-thumbs">
+    <!-- Thumbnails inserted dynamically -->
+   </div>
+  </div>
+  <div class="modal-content">
+   <div class="modal-eyebrow" id="modal-cat">Everyday Sneaker</div>
+   <h2 class="modal-title" id="modal-name">Decan Everyday Navy Suede</h2>
+   <div class="modal-price-row">
+    <div class="modal-price" id="modal-price">₹4,499</div>
+    <div class="modal-orig" id="modal-orig">₹5,999</div>
+    <div class="modal-disc" id="modal-disc">25% OFF</div>
+   </div>
+   <p class="modal-desc" id="modal-desc">Handcrafted from rich Indian midnight navy suede with reinforced stitch detailing, cushioned collar, and our proprietary Deccan-Comfort dual density footbed.</p>
+   
+   <div class="modal-section-title">Color: <span id="modal-color-name" style="font-weight:400;text-transform:none">Midnight Navy</span></div>
+   <div class="color-swatches" id="modal-swatches">
+    <!-- Color swatches -->
+   </div>
+
+   <div class="modal-section-title">
+    Select UK / India Size
+    <span class="guide-link" onclick="openSizeGuideModal()">Size Guide</span>
+   </div>
+   <div class="size-picker" id="modal-sizes">
+    <!-- Sizes -->
+   </div>
+
+   <div class="pincode-check">
+    <span>📍 Delivery to:</span>
+    <input type="text" id="pincode-input" placeholder="Pincode (e.g. 500001)" maxlength="6">
+    <button onclick="checkPincode()">Check</button>
+    <span id="pincode-msg" style="color:var(--success);font-weight:600"></span>
+   </div>
+
+   <div class="modal-actions">
+    <button class="btn btn-sand" id="modal-add-btn" onclick="addModalItemToCart()">Add to Bag <svg><use href="#ar"/></svg></button>
+    <button class="btn btn-dark" onclick="buyNowModalItem()">Buy Now</button>
+   </div>
+  </div>
+ </div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div class="modal-backdrop" id="checkout-backdrop" onclick="closeCheckoutModal(event)">
+ <div class="checkout-modal" id="checkout-modal">
+  <button class="modal-close" onclick="closeCheckoutModal()" aria-label="Close Checkout">✕</button>
+  <div class="checkout-steps">
+   <div class="chk-step active" id="chk-step-1-indicator"><span>1</span> Delivery Address</div>
+   <div class="chk-step" id="chk-step-2-indicator"><span>2</span> Payment</div>
+   <div class="chk-step" id="chk-step-3-indicator"><span>3</span> Confirmation</div>
+  </div>
+
+  <!-- CHECKOUT STEP 1: ADDRESS -->
+  <div id="checkout-step-1">
+   <h3 style="font-family:var(--serif);font-size:22px;margin-bottom:16px">Where should we deliver?</h3>
+   <form id="shipping-form" onsubmit="event.preventDefault(); goToCheckoutStep(2)">
+    <div class="form-grid">
+     <div class="form-group">
+      <label>Full Name *</label>
+      <input type="text" required placeholder="e.g. Rohan Sharma" id="chk-name">
+     </div>
+     <div class="form-group">
+      <label>Mobile Number (For WhatsApp tracking) *</label>
+      <input type="tel" required placeholder="+91 98765 43210" id="chk-phone">
+     </div>
+     <div class="form-group full">
+      <label>Email Address *</label>
+      <input type="email" required placeholder="rohan@example.com" id="chk-email">
+     </div>
+     <div class="form-group full">
+      <label>Street Address / Flat / Landmark *</label>
+      <input type="text" required placeholder="Flat 402, Deccan Heights, Jubilee Hills" id="chk-address">
+     </div>
+     <div class="form-group">
+      <label>City *</label>
+      <input type="text" required placeholder="Hyderabad" id="chk-city">
+     </div>
+     <div class="form-group">
+      <label>State *</label>
+      <select required id="chk-state">
+       <option value="Telangana">Telangana</option>
+       <option value="Karnataka">Karnataka</option>
+       <option value="Maharashtra">Maharashtra</option>
+       <option value="Delhi NCR">Delhi NCR</option>
+       <option value="Tamil Nadu">Tamil Nadu</option>
+       <option value="Gujarat">Gujarat</option>
+       <option value="West Bengal">West Bengal</option>
+       <option value="Other">Other State</option>
+      </select>
+     </div>
+     <div class="form-group">
+      <label>PIN Code *</label>
+      <input type="text" required placeholder="500033" maxlength="6" id="chk-pin">
+     </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:20px">
+     <div style="font-size:14px;font-weight:700">Order Total: <span id="checkout-amount-display" style="color:var(--ink)">₹0</span></div>
+     <button type="submit" class="btn btn-dark">Continue to Payment <svg><use href="#ar"/></svg></button>
+    </div>
+   </form>
+  </div>
+
+  <!-- CHECKOUT STEP 2: PAYMENT -->
+  <div id="checkout-step-2" style="display:none">
+   <h3 style="font-family:var(--serif);font-size:22px;margin-bottom:16px">Choose Payment Method</h3>
+   <div class="pay-options">
+    <div class="pay-opt active" onclick="selectPaymentMethod('upi', this)">
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M7 12h10M12 7v10"/></svg>
+     <span>Instant UPI / QR</span>
+     <small style="font-size:10px;color:var(--muted)">GPay, PhonePe, Paytm</small>
+    </div>
+    <div class="pay-opt" onclick="selectPaymentMethod('card', this)">
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+     <span>Credit / Debit Card</span>
+     <small style="font-size:10px;color:var(--muted)">Visa, Mastercard, RuPay</small>
+    </div>
+    <div class="pay-opt" onclick="selectPaymentMethod('cod', this)">
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M12 6v12M8 10h8"/></svg>
+     <span>Cash on Delivery</span>
+     <small style="font-size:10px;color:var(--muted)">Pay upon receipt</small>
+    </div>
+   </div>
+
+   <div id="pay-upi-view" style="background:var(--cream);padding:20px;border-radius:10px;margin-bottom:20px;text-align:center">
+    <div style="font-size:13px;font-weight:600;margin-bottom:8px">Scan UPI QR with any Banking App</div>
+    <div style="width:140px;height:140px;background:#fff;margin:0 auto 12px;border:1px solid #ddd;border-radius:8px;display:grid;place-items:center;font-family:monospace;font-size:10px;padding:8px">
+     <div style="text-align:center">
+      <svg viewBox="0 0 24 24" style="width:40px;height:40px;stroke:var(--ink);fill:none;margin-bottom:4px"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      <div>UPI ID: decanworld@icici</div>
+     </div>
+    </div>
+    <div style="font-size:12px;color:var(--muted)">Auto-verified within 5 seconds</div>
+   </div>
+
+   <div id="pay-card-view" style="display:none;margin-bottom:20px">
+    <div class="form-grid">
+     <div class="form-group full">
+      <label>Card Number</label>
+      <input type="text" placeholder="4123 4567 8901 2345" maxlength="19">
+     </div>
+     <div class="form-group">
+      <label>Valid Thru</label>
+      <input type="text" placeholder="MM/YY" maxlength="5">
+     </div>
+     <div class="form-group">
+      <label>CVV</label>
+      <input type="password" placeholder="123" maxlength="4">
+     </div>
+    </div>
+   </div>
+
+   <div id="pay-cod-view" style="display:none;background:var(--cream);padding:16px;border-radius:8px;margin-bottom:20px;font-size:13px">
+    ✓ Cash on Delivery available for your pincode. Please keep exact cash or UPI ready at the time of delivery.
+   </div>
+
+   <div style="display:flex;justify-content:space-between;align-items:center">
+    <button class="btn btn-outline btn-sm" onclick="goToCheckoutStep(1)">← Back to Address</button>
+    <button class="btn btn-sand" id="place-order-btn" onclick="completeOrder()">Confirm Order (<span id="checkout-btn-price">₹0</span>) ✓</button>
+   </div>
+  </div>
+
+  <!-- CHECKOUT STEP 3: ORDER SUCCESS -->
+  <div id="checkout-step-3" style="display:none;text-align:center;padding:20px 10px">
+   <div style="width:70px;height:70px;background:#e8f5e9;border-radius:50%;display:grid;place-items:center;margin:0 auto 18px;color:var(--success);font-size:32px">✓</div>
+   <div class="eyebrow" style="color:var(--sand-dark)">Step Into Higher Ground</div>
+   <h2 style="font-size:32px;margin:10px 0">Order Confirmed!</h2>
+   <p style="font-size:15px;color:var(--muted);max-width:440px;margin:0 auto 24px">Thank you, <b id="conf-name">Explorer</b>. Your Decan sneakers are being hand-inspected and prepped for dispatch from Hyderabad.</p>
+   
+   <div style="background:var(--cream);border-radius:12px;padding:20px;max-width:400px;margin:0 auto 24px;text-align:left;font-size:13px">
+    <div style="display:flex;justify-content:space-between;margin-bottom:8px"><span>Order ID:</span><b id="conf-order-id">#DW-89241</b></div>
+    <div style="display:flex;justify-content:space-between;margin-bottom:8px"><span>Estimated Delivery:</span><b id="conf-delivery-date">In 3 Business Days</b></div>
+    <div style="display:flex;justify-content:space-between;margin-bottom:8px"><span>Shipping:</span><b>Bluedart Express Air</b></div>
+    <div style="display:flex;justify-content:space-between;border-top:1px solid #ddd;padding-top:8px;font-weight:700"><span>Paid Amount:</span><span id="conf-total">₹0</span></div>
+   </div>
+
+   <button class="btn btn-dark" onclick="closeCheckoutModal(); clearCartAfterOrder();">Continue Exploring Collection</button>
+  </div>
+ </div>
+</div>
+
+<!-- LIVE SEARCH MODAL -->
+<div class="modal-backdrop" id="search-backdrop" onclick="closeSearchModal(event)">
+ <div class="search-modal" id="search-modal">
+  <div class="search-input-wrap">
+   <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></svg>
+   <input type="text" class="search-input" id="search-input" placeholder="Search by model, suede, leather, or color..." oninput="handleLiveSearch(this.value)" autocomplete="off">
+  </div>
+  <div class="search-tags">
+   <span class="title">Trending:</span>
+   <span class="search-tag" onclick="setSearchQuery('Everyday')">Everyday Navy</span>
+   <span class="search-tag" onclick="setSearchQuery('Classic')">Classic Off-White</span>
+   <span class="search-tag" onclick="setSearchQuery('Stealth')">Limited Stealth</span>
+   <span class="search-tag" onclick="setSearchQuery('Trail')">Sahyadri Trail</span>
+   <span class="search-tag" onclick="setSearchQuery('Waterproof')">Monsoon Waterproof</span>
+  </div>
+  <div class="search-results" id="search-results">
+   <!-- Results dynamically inserted -->
+  </div>
+ </div>
+</div>
+
+<!-- SIZE GUIDE MODAL -->
+<div class="modal-backdrop" id="sizeguide-backdrop" onclick="closeSizeGuideModal(event)">
+ <div class="checkout-modal" style="max-width:640px" id="sizeguide-modal">
+  <button class="modal-close" onclick="closeSizeGuideModal()" aria-label="Close Size Guide">✕</button>
+  <div class="label">Fit Architecture</div>
+  <h2 style="margin:8px 0 16px">Decan Footwear Size Guide<em>.</em></h2>
+  <p style="font-size:13px;color:var(--muted);margin-bottom:20px">Our sneakers are engineered true-to-size for Indian foot profiles with a slightly roomier toe-box for all-day breathing.</p>
+  
+  <table style="width:100%;border-collapse:collapse;font-size:13px;margin-bottom:24px;text-align:left">
+   <thead>
+    <tr style="background:var(--ink);color:var(--sand)">
+     <th style="padding:10px 14px">India / UK</th>
+     <th style="padding:10px 14px">US Men</th>
+     <th style="padding:10px 14px">EU</th>
+     <th style="padding:10px 14px">Foot Length (CM)</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr style="border-bottom:1px solid #eee"><td style="padding:10px 14px"><b>UK 6</b></td><td style="padding:10px 14px">US 7</td><td style="padding:10px 14px">EU 40</td><td style="padding:10px 14px">24.5 cm</td></tr>
+    <tr style="border-bottom:1px solid #eee;background:var(--cream)"><td style="padding:10px 14px"><b>UK 7</b></td><td style="padding:10px 14px">US 8</td><td style="padding:10px 14px">EU 41</td><td style="padding:10px 14px">25.5 cm</td></tr>
+    <tr style="border-bottom:1px solid #eee"><td style="padding:10px 14px"><b>UK 8</b></td><td style="padding:10px 14px">US 9</td><td style="padding:10px 14px">EU 42</td><td style="padding:10px 14px">26.5 cm</td></tr>
+    <tr style="border-bottom:1px solid #eee;background:var(--cream)"><td style="padding:10px 14px"><b>UK 9</b></td><td style="padding:10px 14px">US 10</td><td style="padding:10px 14px">EU 43</td><td style="padding:10px 14px">27.5 cm</td></tr>
+    <tr style="border-bottom:1px solid #eee"><td style="padding:10px 14px"><b>UK 10</b></td><td style="padding:10px 14px">US 11</td><td style="padding:10px 14px">EU 44</td><td style="padding:10px 14px">28.5 cm</td></tr>
+    <tr style="border-bottom:1px solid #eee;background:var(--cream)"><td style="padding:10px 14px"><b>UK 11</b></td><td style="padding:10px 14px">US 12</td><td style="padding:10px 14px">EU 45</td><td style="padding:10px 14px">29.5 cm</td></tr>
+   </tbody>
+  </table>
+  <div style="background:var(--sand-light);border-left:3px solid var(--sand-dark);padding:14px;border-radius:4px;font-size:12.5px;color:var(--ink)">
+   💡 <b>Between sizes?</b> If you usually wear half sizes (e.g. UK 8.5), we recommend ordering one size up (UK 9) for maximum walking comfort.
+  </div>
+ </div>
+</div>
+
+<!-- DECAN STORY DEEP DIVE MODAL -->
+<div class="modal-backdrop" id="story-backdrop" onclick="closeStoryModal(event)">
+ <div class="checkout-modal" style="max-width:700px" id="story-modal">
+  <button class="modal-close" onclick="closeStoryModal()" aria-label="Close Story">✕</button>
+  <div class="label">The Deccan World Philosophy</div>
+  <h2 style="margin:10px 0 16px">Born on the Plateau. Built for the World<em>.</em></h2>
+  <img src="assets/story-man-sitting.jpg" style="width:100%;height:240px;object-fit:cover;border-radius:8px;margin-bottom:20px" alt="Decan Heritage">
+  <div style="font-size:14px;line-height:1.7;color:var(--muted)">
+   <p style="margin-bottom:14px">The Deccan Plateau is one of the oldest geological surfaces on Earth — rugged volcanic basalt, storied stone citadels, and today, India's most vibrant hubs of technology, design, and culture.</p>
+   <p style="margin-bottom:14px">Decan World was founded with a singular purpose: why should sneaker enthusiasts in India rely on mass-produced imported footwear that wasn't designed for our streets, our weather, or our foot anatomy?</p>
+   <p>We work with generational shoe artisans in Southern India, blending traditional vulcanized footwear craft with aerospace-grade OrthoLite shock absorption. Every pair carries our signature flying bird insignia — a quiet mark of those who choose to live on a higher ground.</p>
+  </div>
+  <div style="margin-top:24px;text-align:right">
+   <button class="btn btn-dark" onclick="closeStoryModal(); window.location.href='#catalog'">Explore the Sneakers <svg><use href="#ar"/></svg></button>
+  </div>
+ </div>
+</div>
+
+<!-- MOBILE DRAWER NAVIGATION -->
+<div class="drawer-backdrop" id="mobilenav-backdrop" onclick="toggleMobileNav()"></div>
+<div class="mobile-nav" id="mobile-nav">
+ <div class="mobile-nav-top">
+  <a class="logo" href="#home" onclick="toggleMobileNav()"><img class="mark" src="assets/decan-bird-logo.png" alt="">DECAN</a>
+  <button class="cart-close" onclick="toggleMobileNav()" style="color:#fff">✕</button>
+ </div>
+ <div class="mobile-nav-links">
+  <a href="#home" onclick="toggleMobileNav()">Home</a>
+  <a href="#collection" onclick="toggleMobileNav()">Featured Drops</a>
+  <a href="#catalog" onclick="toggleMobileNav()">Shop All Sneakers</a>
+  <a href="#story" onclick="toggleMobileNav()">Our Story</a>
+  <a href="javascript:void(0)" onclick="toggleMobileNav(); openSizeGuideModal();">Size Guide</a>
+  <a href="javascript:void(0)" onclick="toggleMobileNav(); openSearchModal();">Search Catalog</a>
+ </div>
+ <div class="mobile-nav-foot">
+  <button class="btn btn-sand" style="width:100%;margin-bottom:14px" onclick="toggleMobileNav(); openCartDrawer();">Open Bag (<span id="mob-cart-count">0</span>)</button>
+  <div style="text-align:center;font-size:11px;opacity:.7">Designed in India • All Prices in INR (₹)</div>
+ </div>
+</div>
+
+<!-- FLOATING TOAST NOTIFICATION CONTAINER -->
+<div class="toast-container" id="toast-container"></div>
+
+<!-- JAVASCRIPT APPLICATION LOGIC -->
+<script>
+// PRODUCT CATALOG DATABASE
+const SNEAKERS = [
+  {
+    id: "decan-everyday-navy",
+    name: "Decan Everyday Navy Suede",
+    category: "everyday",
+    categoryLabel: "Everyday Suede",
+    subtitle: "Versatile & Stylish",
+    price: 4499,
+    originalPrice: 5999,
+    discount: "25% OFF",
+    rating: 4.9,
+    reviewsCount: 148,
+    tag: "Bestseller",
+    badgeType: "gold",
+    image: "assets/hero-navy-sneaker.jpg",
+    gallery: [
+      "assets/hero-navy-sneaker.jpg",
+      "assets/sneaker-everyday.jpg",
+      "assets/sneaker-heel-step.jpg"
+    ],
+    description: "Crafted from rich Indian midnight navy suede with reinforced stitch detailing, cushioned collar, and our proprietary Deccan-Comfort dual density footbed. Built for all-day urban roaming.",
+    colors: [
+      { name: "Midnight Navy", hex: "#1c2536" },
+      { name: "Desert Sand", hex: "#c5a982" },
+      { name: "Charcoal Ink", hex: "#111111" }
+    ],
+    sizes: [6, 7, 8, 9, 10, 11]
+  },
+  {
+    id: "decan-classic-cream",
+    name: "Decan Classic Off-White",
+    category: "classic",
+    categoryLabel: "Classic Leather",
+    subtitle: "Clean & Timeless",
+    price: 4999,
+    originalPrice: 6499,
+    discount: "23% OFF",
+    rating: 4.95,
+    reviewsCount: 210,
+    tag: "Iconic",
+    badgeType: "gold",
+    image: "assets/sneaker-classic.jpg",
+    gallery: [
+      "assets/sneaker-classic.jpg",
+      "assets/sneaker-everyday.jpg",
+      "assets/sneaker-heel-step.jpg"
+    ],
+    description: "The quintessential everyday low-top. Premium off-white full grain leather that ages beautifully, accented with subtle cream and gold foil Decan insignia.",
+    colors: [
+      { name: "Chalk White", hex: "#f7f5f0" },
+      { name: "Raw Canvas", hex: "#e3dcce" },
+      { name: "Olive Accent", hex: "#4f5341" }
+    ],
+    sizes: [6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    id: "decan-limited-stealth",
+    name: "Decan Limited Edition Stealth",
+    category: "limited",
+    categoryLabel: "Rare Drops",
+    subtitle: "Laser-Numbered • 1 of 500",
+    price: 6999,
+    originalPrice: 8999,
+    discount: "22% OFF",
+    rating: 5.0,
+    reviewsCount: 64,
+    tag: "Only 14 Left",
+    badgeType: "red",
+    image: "assets/sneaker-limited.jpg",
+    gallery: [
+      "assets/sneaker-limited.jpg",
+      "assets/sneaker-heel-step.jpg",
+      "assets/hero-navy-sneaker.jpg"
+    ],
+    description: "Monochrome blackout execution with matte ballistic nylon inserts and individually laser-numbered heel tabs. Engineered with Deccan Rock vulcanized outsole for indestructible grip.",
+    colors: [
+      { name: "Stealth Black", hex: "#0a0a0a" },
+      { name: "Gunmetal Grey", hex: "#333333" }
+    ],
+    sizes: [7, 8, 9, 10, 11]
+  },
+  {
+    id: "decan-sahyadri-trail",
+    name: "Decan Sahyadri Ridge Low",
+    category: "trail",
+    categoryLabel: "Trail & Outdoor",
+    subtitle: "All-Terrain Traction",
+    price: 5499,
+    originalPrice: 6999,
+    discount: "21% OFF",
+    rating: 4.88,
+    reviewsCount: 92,
+    tag: "All-Weather",
+    badgeType: "gold",
+    image: "assets/sneaker-everyday.jpg",
+    gallery: [
+      "assets/sneaker-everyday.jpg",
+      "assets/hero-navy-sneaker.jpg",
+      "assets/sneaker-heel-step.jpg"
+    ],
+    description: "Inspired by the rugged Sahyadri ranges of the Deccan plateau. Features water-resistant oiled nubuck, high-traction deep lug pattern, and mudguard heel reinforcement.",
+    colors: [
+      { name: "Terra Cotta", hex: "#8d4c38" },
+      { name: "Forest Moss", hex: "#3a4a3f" },
+      { name: "Basalt Grey", hex: "#4a4845" }
+    ],
+    sizes: [7, 8, 9, 10, 11]
+  },
+  {
+    id: "decan-heritage-hightop",
+    name: "Decan Heritage High-Top",
+    category: "classic",
+    categoryLabel: "High-Top",
+    subtitle: "Architectural Silhouette",
+    price: 5999,
+    originalPrice: 7499,
+    discount: "20% OFF",
+    rating: 4.92,
+    reviewsCount: 115,
+    tag: "Trending",
+    badgeType: "gold",
+    image: "assets/hero-navy-sneaker.jpg",
+    gallery: [
+      "assets/hero-navy-sneaker.jpg",
+      "assets/sneaker-classic.jpg",
+      "assets/sneaker-heel-step.jpg"
+    ],
+    description: "An elevated ankle silhouette paying homage to Deccan architectural arches. Padded ankle collar with dual-speed lacing hooks and antique brass eyelets.",
+    colors: [
+      { name: "Antique Sand", hex: "#d9c29d" },
+      { name: "Vintage Black", hex: "#181716" }
+    ],
+    sizes: [6, 7, 8, 9, 10, 11]
+  },
+  {
+    id: "decan-monsoon-hydro",
+    name: "Decan Monsoon HydroShield",
+    category: "everyday",
+    categoryLabel: "Monsoon Edition",
+    subtitle: "100% Water-Repellent",
+    price: 4799,
+    originalPrice: 6299,
+    discount: "24% OFF",
+    rating: 4.96,
+    reviewsCount: 173,
+    tag: "HydroShield",
+    badgeType: "gold",
+    image: "assets/sneaker-classic.jpg",
+    gallery: [
+      "assets/sneaker-classic.jpg",
+      "assets/sneaker-limited.jpg",
+      "assets/sneaker-heel-step.jpg"
+    ],
+    description: "Engineered specifically for Indian monsoon streets. Nano-coated water-shedding upper with sealed seams and anti-skid wet grip rubber compound.",
+    colors: [
+      { name: "Storm Grey", hex: "#585e65" },
+      { name: "Deep Teal", hex: "#1e3d3b" }
+    ],
+    sizes: [7, 8, 9, 10, 11, 12]
+  }
+];
+
+// STATE MANAGEMENT WITH LOCALSTORAGE PERSISTENCE
+let cart = JSON.parse(localStorage.getItem('decan_cart')) || [
+  {
+    id: "decan-everyday-navy",
+    name: "Decan Everyday Navy Suede",
+    size: 9,
+    color: "Midnight Navy",
+    price: 4499,
+    image: "assets/hero-navy-sneaker.jpg",
+    quantity: 1
+  }
+];
+let wishlist = JSON.parse(localStorage.getItem('decan_wishlist')) || [];
+let activeDiscount = null; // e.g. { code: 'DECAN10', percent: 10 }
+let selectedCatalogCategory = 'all';
+let currentSort = 'featured';
+let currentActiveProduct = SNEAKERS[0];
+let currentSelectedSize = 9;
+let currentSelectedColor = SNEAKERS[0].colors[0].name;
+
+// HERO SLIDES DATA
+const HERO_SLIDES = [
+  {
+    img: "assets/hero-navy-sneaker.jpg",
+    eyebrow: "More than just sneakers",
+    title: "FOR A HIGHER <span>GROUND</span>",
+    lede: "Decan World creates sneakers for those who move with purpose — built on comfort, culture and a bigger story.",
+    tag: "Built<br>to Move<br>Differently."
+  }
+];
+
+// HERO SLIDER LOGIC
+function setHeroSlide(idx) {
+  const slide = HERO_SLIDES[idx];
+  if (!slide) return;
+
+  const bg = document.getElementById('hero-bg');
+  const eyebrow = document.getElementById('hero-eyebrow');
+  const title = document.getElementById('hero-title');
+  const lede = document.getElementById('hero-lede');
+  const tag = document.getElementById('hero-tag');
+
+  bg.style.opacity = '0';
+  setTimeout(() => {
+    bg.src = slide.img;
+    eyebrow.textContent = slide.eyebrow;
+    title.innerHTML = slide.title;
+    lede.textContent = slide.lede;
+    tag.innerHTML = slide.tag;
+    bg.style.opacity = '1';
+  }, 300);
+
+  // Update indicators
+  document.querySelectorAll('#hero-slider-nav span').forEach((span, i) => {
+    span.classList.toggle('cur', i === idx);
+  });
+}
+
+// RENDER PRODUCTS GRID
+function renderCatalog() {
+  const container = document.getElementById('products-grid-container');
+  if (!container) return;
+
+  let filtered = [...SNEAKERS];
+  if (selectedCatalogCategory !== 'all') {
+    filtered = filtered.filter(p => p.category === selectedCatalogCategory);
+  }
+
+  // Sort
+  if (currentSort === 'price-low') {
+    filtered.sort((a, b) => a.price - b.price);
+  } else if (currentSort === 'price-high') {
+    filtered.sort((a, b) => b.price - a.price);
+  } else if (currentSort === 'rating') {
+    filtered.sort((a, b) => b.rating - a.rating);
+  }
+
+  container.innerHTML = filtered.map(product => {
+    const isWished = wishlist.includes(product.id);
+    return `
+      <div class="product-card" data-id="${product.id}">
+        <div class="card-media">
+          <img src="${product.image}" alt="${product.name}" loading="lazy">
+          <span class="card-badge ${product.badgeType}">${product.tag}</span>
+          <button class="card-wishlist ${isWished ? 'active' : ''}" onclick="toggleWishlist('${product.id}', this)" aria-label="Save to Wishlist">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </button>
+          <button class="quick-view-btn" onclick="openProductModal('${product.id}')">Quick View &amp; Sizing</button>
+        </div>
+        <div class="card-details">
+          <div class="card-top">
+            <span class="card-category">${product.categoryLabel}</span>
+            <div class="card-rating">
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <span>${product.rating} (${product.reviewsCount})</span>
+            </div>
+          </div>
+          <h3 class="card-title">${product.name}</h3>
+          <p class="card-desc">${product.description}</p>
+          <div class="card-sizes">
+            ${product.sizes.map(size => `
+              <span class="size-chip ${size === 9 ? 'selected' : ''}" onclick="selectCardSize(this, ${size})">UK ${size}</span>
+            `).join('')}
+          </div>
+          <div class="card-foot">
+            <div class="price-wrap">
+              <span class="price-current">₹${product.price.toLocaleString('en-IN')}</span>
+              <div class="price-row">
+                <span class="price-orig">₹${product.originalPrice.toLocaleString('en-IN')}</span>
+                <span class="price-discount">${product.discount}</span>
+              </div>
+            </div>
+            <button class="add-bag-btn" onclick="quickAddToCart('${product.id}', this)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 016 0v2"/></svg>
+              Add to Bag
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function selectCardSize(elem, size) {
+  const parent = elem.closest('.card-sizes');
+  parent.querySelectorAll('.size-chip').forEach(el => el.classList.remove('selected'));
+  elem.classList.add('selected');
+}
+
+function filterCatalog(category, btnElem) {
+  selectedCatalogCategory = category;
+  if (btnElem) {
+    document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
+    btnElem.classList.add('active');
+  }
+  renderCatalog();
+}
+
+function sortCatalog(sortVal) {
+  currentSort = sortVal;
+  renderCatalog();
+}
+
+// PRODUCT DETAIL / QUICK VIEW MODAL
+function openProductModal(productId) {
+  const product = SNEAKERS.find(p => p.id === productId);
+  if (!product) return;
+
+  currentActiveProduct = product;
+  currentSelectedSize = product.sizes[0] || 9;
+  currentSelectedColor = product.colors[0].name;
+
+  document.getElementById('modal-img').src = product.image;
+  document.getElementById('modal-cat').textContent = product.categoryLabel;
+  document.getElementById('modal-name').textContent = product.name;
+  document.getElementById('modal-price').textContent = '₹' + product.price.toLocaleString('en-IN');
+  document.getElementById('modal-orig').textContent = '₹' + product.originalPrice.toLocaleString('en-IN');
+  document.getElementById('modal-disc').textContent = product.discount;
+  document.getElementById('modal-desc').textContent = product.description;
+  document.getElementById('modal-color-name').textContent = currentSelectedColor;
+
+  // Thumbs
+  const thumbsContainer = document.getElementById('modal-thumbs');
+  thumbsContainer.innerHTML = product.gallery.map((gImg, idx) => `
+    <img class="modal-thumb ${idx === 0 ? 'active' : ''}" src="${gImg}" alt="Thumb" onclick="setModalMainImage('${gImg}', this)">
+  `).join('');
+
+  // Swatches
+  const swatchesContainer = document.getElementById('modal-swatches');
+  swatchesContainer.innerHTML = product.colors.map((c, idx) => `
+    <span class="swatch ${idx === 0 ? 'active' : ''}" style="background:${c.hex}" title="${c.name}" onclick="selectModalColor('${c.name}', this)"></span>
+  `).join('');
+
+  // Sizes
+  const sizesContainer = document.getElementById('modal-sizes');
+  sizesContainer.innerHTML = product.sizes.map((s, idx) => `
+    <span class="size-opt ${idx === 1 ? 'active' : ''}" onclick="selectModalSize(${s}, this)">UK ${s}</span>
+  `).join('');
+  if (product.sizes.length > 1) currentSelectedSize = product.sizes[1];
+
+  document.getElementById('pincode-msg').textContent = '';
+  document.getElementById('product-modal-backdrop').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function setModalMainImage(src, thumbElem) {
+  document.getElementById('modal-img').src = src;
+  document.querySelectorAll('.modal-thumb').forEach(t => t.classList.remove('active'));
+  thumbElem.classList.add('active');
+}
+
+function selectModalColor(colorName, elem) {
+  currentSelectedColor = colorName;
+  document.getElementById('modal-color-name').textContent = colorName;
+  document.querySelectorAll('.swatch').forEach(s => s.classList.remove('active'));
+  elem.classList.add('active');
+}
+
+function selectModalSize(size, elem) {
+  currentSelectedSize = size;
+  document.querySelectorAll('.size-opt').forEach(s => s.classList.remove('active'));
+  elem.classList.add('active');
+}
+
+function closeProductModal(event) {
+  if (event && event.target !== document.getElementById('product-modal-backdrop') && !event.target.classList.contains('modal-close')) {
+    return;
+  }
+  document.getElementById('product-modal-backdrop').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function checkPincode() {
+  const pin = document.getElementById('pincode-input').value.trim();
+  const msg = document.getElementById('pincode-msg');
+  if (pin.length === 6 && /^\d+$/.test(pin)) {
+    msg.textContent = '✓ Express delivery in 2 days available!';
+    msg.style.color = 'var(--success)';
+  } else {
+    msg.textContent = 'Please enter a valid 6-digit PIN';
+    msg.style.color = '#b83232';
+  }
+}
+
+function addModalItemToCart() {
+  addToCart(currentActiveProduct, currentSelectedSize, currentSelectedColor);
+  closeProductModal();
+  openCartDrawer();
+}
+
+function buyNowModalItem() {
+  addToCart(currentActiveProduct, currentSelectedSize, currentSelectedColor);
+  closeProductModal();
+  openCheckoutModal();
+}
+
+// CART MANAGEMENT
+function quickAddToCart(productId, btnElem) {
+  const product = SNEAKERS.find(p => p.id === productId);
+  if (!product) return;
+
+  // Find selected size chip in card if present
+  let size = 9;
+  const card = btnElem.closest('.product-card');
+  if (card) {
+    const sel = card.querySelector('.size-chip.selected');
+    if (sel) {
+      size = parseInt(sel.textContent.replace('UK', '').trim()) || 9;
+    }
+  }
+
+  addToCart(product, size, product.colors[0].name);
+
+  // Micro animation on button
+  const originalText = btnElem.innerHTML;
+  btnElem.innerHTML = '✓ Added!';
+  btnElem.style.background = 'var(--ink)';
+  btnElem.style.color = 'var(--sand)';
+  setTimeout(() => {
+    btnElem.innerHTML = originalText;
+    btnElem.style.background = '';
+    btnElem.style.color = '';
+  }, 1200);
+
+  showToast(`Added ${product.name} (UK ${size}) to your bag`);
+}
+
+function addToCart(product, size, color) {
+  const existingIndex = cart.findIndex(item => item.id === product.id && item.size === size && item.color === color);
+  if (existingIndex > -1) {
+    cart[existingIndex].quantity += 1;
+  } else {
+    cart.push({
+      id: product.id,
+      name: product.name,
+      size: size,
+      color: color || product.colors[0].name,
+      price: product.price,
+      image: product.image,
+      quantity: 1
+    });
+  }
+
+  saveCart();
+  updateCartUI();
+
+  // Trigger bounce on cart icon
+  const bagIcon = document.getElementById('cart-nav-btn');
+  if (bagIcon) {
+    bagIcon.classList.add('bounce');
+    setTimeout(() => bagIcon.classList.remove('bounce'), 400);
+  }
+}
+
+function changeCartQty(index, delta) {
+  if (cart[index]) {
+    cart[index].quantity += delta;
+    if (cart[index].quantity <= 0) {
+      cart.splice(index, 1);
+    }
+  }
+  saveCart();
+  updateCartUI();
+}
+
+function removeCartItem(index) {
+  if (cart[index]) {
+    const name = cart[index].name;
+    cart.splice(index, 1);
+    saveCart();
+    updateCartUI();
+    showToast(`Removed ${name} from bag`);
+  }
+}
+
+function saveCart() {
+  localStorage.setItem('decan_cart', JSON.stringify(cart));
+}
+
+function updateCartUI() {
+  const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+  const badge = document.getElementById('nav-cart-badge');
+  const countSpan = document.getElementById('cart-item-count');
+  const mobCount = document.getElementById('mob-cart-count');
+
+  if (badge) badge.textContent = totalCount;
+  if (countSpan) countSpan.textContent = totalCount;
+  if (mobCount) mobCount.textContent = totalCount;
+
+  const container = document.getElementById('cart-items-container');
+  const foot = document.getElementById('cart-foot');
+  if (!container) return;
+
+  if (cart.length === 0) {
+    container.innerHTML = `
+      <div class="cart-empty">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 016 0v2"/></svg>
+        <p style="font-size:15px;font-weight:500;color:var(--ink);margin-bottom:6px">Your bag is empty</p>
+        <p style="font-size:13px;margin-bottom:20px">Step into our collection and find your pair.</p>
+        <button class="btn btn-dark btn-sm" onclick="closeCartDrawer(); window.location.href='#catalog'">Discover Sneakers</button>
+      </div>
+    `;
+    if (foot) foot.style.display = 'none';
+    return;
+  }
+
+  if (foot) foot.style.display = 'block';
+
+  container.innerHTML = cart.map((item, idx) => `
+    <div class="cart-item">
+      <img class="cart-item-img" src="${item.image}" alt="${item.name}">
+      <div class="cart-item-info">
+        <h4>${item.name}</h4>
+        <div class="cart-item-meta">Size: UK ${item.size} • ${item.color}</div>
+        <div class="cart-qty-row">
+          <button class="qty-btn" onclick="changeCartQty(${idx}, -1)" aria-label="Decrease quantity">−</button>
+          <span class="qty-val">${item.quantity}</span>
+          <button class="qty-btn" onclick="changeCartQty(${idx}, 1)" aria-label="Increase quantity">+</button>
+        </div>
+      </div>
+      <div>
+        <div class="cart-item-price">₹${(item.price * item.quantity).toLocaleString('en-IN')}</div>
+        <button class="cart-item-del" onclick="removeCartItem(${idx})">Remove</button>
+      </div>
+    </div>
+  `).join('');
+
+  // Calculations
+  const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+  let discountVal = 0;
+  if (activeDiscount) {
+    discountVal = Math.round(subtotal * (activeDiscount.percent / 100));
+  }
+  const total = subtotal - discountVal;
+
+  document.getElementById('cart-subtotal').textContent = '₹' + subtotal.toLocaleString('en-IN');
+  document.getElementById('cart-total').textContent = '₹' + total.toLocaleString('en-IN');
+
+  const discRow = document.getElementById('promo-discount-row');
+  if (activeDiscount) {
+    discRow.style.display = 'flex';
+    document.getElementById('promo-name').textContent = activeDiscount.code;
+    document.getElementById('promo-discount-val').textContent = '-₹' + discountVal.toLocaleString('en-IN');
+  } else {
+    discRow.style.display = 'none';
+  }
+}
+
+function applyPromoCode() {
+  const code = document.getElementById('promo-code-input').value.trim().toUpperCase();
+  if (code === 'DECAN10') {
+    activeDiscount = { code: 'DECAN10', percent: 10 };
+    showToast('Promo code DECAN10 applied! 10% discount added.');
+  } else if (code === 'FIRSTDROP') {
+    activeDiscount = { code: 'FIRSTDROP', percent: 12 };
+    showToast('Promo code FIRSTDROP applied! 12% discount added.');
+  } else if (code === 'DECANVIP') {
+    activeDiscount = { code: 'DECANVIP', percent: 15 };
+    showToast('VIP code DECANVIP applied! 15% discount added.');
+  } else {
+    showToast('Invalid code. Try DECAN10 for 10% off.');
+    return;
+  }
+  updateCartUI();
+}
+
+function openCartDrawer() {
+  updateCartUI();
+  document.getElementById('cart-drawer').classList.add('open');
+  document.getElementById('cart-backdrop').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCartDrawer() {
+  document.getElementById('cart-drawer').classList.remove('open');
+  document.getElementById('cart-backdrop').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// CHECKOUT FLOW
+function openCheckoutModal() {
+  if (cart.length === 0) {
+    showToast('Your shopping bag is empty.');
+    return;
+  }
+  closeCartDrawer();
+  goToCheckoutStep(1);
+
+  const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+  const discountVal = activeDiscount ? Math.round(subtotal * (activeDiscount.percent / 100)) : 0;
+  const total = subtotal - discountVal;
+
+  document.getElementById('checkout-amount-display').textContent = '₹' + total.toLocaleString('en-IN');
+  document.getElementById('checkout-btn-price').textContent = '₹' + total.toLocaleString('en-IN');
+
+  document.getElementById('checkout-backdrop').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCheckoutModal(event) {
+  if (event && event.target !== document.getElementById('checkout-backdrop') && !event.target.classList.contains('modal-close')) {
+    return;
+  }
+  document.getElementById('checkout-backdrop').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function goToCheckoutStep(step) {
+  document.getElementById('checkout-step-1').style.display = step === 1 ? 'block' : 'none';
+  document.getElementById('checkout-step-2').style.display = step === 2 ? 'block' : 'none';
+  document.getElementById('checkout-step-3').style.display = step === 3 ? 'block' : 'none';
+
+  document.getElementById('chk-step-1-indicator').classList.toggle('active', step >= 1);
+  document.getElementById('chk-step-2-indicator').classList.toggle('active', step >= 2);
+  document.getElementById('chk-step-3-indicator').classList.toggle('active', step >= 3);
+}
+
+function selectPaymentMethod(method, elem) {
+  document.querySelectorAll('.pay-opt').forEach(o => o.classList.remove('active'));
+  elem.classList.add('active');
+
+  document.getElementById('pay-upi-view').style.display = method === 'upi' ? 'block' : 'none';
+  document.getElementById('pay-card-view').style.display = method === 'card' ? 'block' : 'none';
+  document.getElementById('pay-cod-view').style.display = method === 'cod' ? 'block' : 'none';
+}
+
+function completeOrder() {
+  const btn = document.getElementById('place-order-btn');
+  btn.innerHTML = 'Verifying &amp; Processing...';
+  btn.style.opacity = '0.7';
+  btn.disabled = true;
+
+  setTimeout(() => {
+    btn.innerHTML = 'Confirm Order ✓';
+    btn.style.opacity = '1';
+    btn.disabled = false;
+
+    // Fill success screen
+    const name = document.getElementById('chk-name').value || 'Customer';
+    const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    const discountVal = activeDiscount ? Math.round(subtotal * (activeDiscount.percent / 100)) : 0;
+    const total = subtotal - discountVal;
+
+    document.getElementById('conf-name').textContent = name;
+    document.getElementById('conf-order-id').textContent = '#DW-' + Math.floor(10000 + Math.random() * 90000);
+    document.getElementById('conf-total').textContent = '₹' + total.toLocaleString('en-IN');
+
+    goToCheckoutStep(3);
+    showToast('🎉 Order successfully placed! Confirmation SMS sent.');
+  }, 1200);
+}
+
+function clearCartAfterOrder() {
+  cart = [];
+  saveCart();
+  updateCartUI();
+}
+
+// LIVE SEARCH MODAL
+function openSearchModal() {
+  document.getElementById('search-backdrop').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  const input = document.getElementById('search-input');
+  input.value = '';
+  setTimeout(() => input.focus(), 100);
+  handleLiveSearch('');
+}
+
+function closeSearchModal(event) {
+  if (event && event.target !== document.getElementById('search-backdrop')) {
+    return;
+  }
+  document.getElementById('search-backdrop').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function setSearchQuery(query) {
+  document.getElementById('search-input').value = query;
+  handleLiveSearch(query);
+}
+
+function handleLiveSearch(query) {
+  const container = document.getElementById('search-results');
+  const q = query.toLowerCase().trim();
+
+  let matches = SNEAKERS;
+  if (q) {
+    matches = SNEAKERS.filter(s => 
+      s.name.toLowerCase().includes(q) ||
+      s.categoryLabel.toLowerCase().includes(q) ||
+      s.description.toLowerCase().includes(q) ||
+      s.subtitle.toLowerCase().includes(q)
+    );
+  }
+
+  if (matches.length === 0) {
+    container.innerHTML = `
+      <div style="text-align:center;padding:30px;color:var(--muted)">
+        No sneakers found matching "${query}". Try "Suede", "Leather", or "Classic".
+      </div>
+    `;
+    return;
+  }
+
+  container.innerHTML = matches.map(s => `
+    <div class="search-item" onclick="openProductModal('${s.id}'); closeSearchModal();">
+      <img src="${s.image}" alt="${s.name}">
+      <div class="search-item-info">
+        <h4>${s.name}</h4>
+        <p>${s.subtitle} • UK ${s.sizes.join(', ')}</p>
+      </div>
+      <div class="search-item-price">₹${s.price.toLocaleString('en-IN')}</div>
+    </div>
+  `).join('');
+}
+
+// SIZE GUIDE & STORY MODALS
+function openSizeGuideModal() {
+  document.getElementById('sizeguide-backdrop').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeSizeGuideModal(event) {
+  if (event && event.target !== document.getElementById('sizeguide-backdrop') && !event.target.classList.contains('modal-close')) {
+    return;
+  }
+  document.getElementById('sizeguide-backdrop').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function openStoryModal() {
+  document.getElementById('story-backdrop').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeStoryModal(event) {
+  if (event && event.target !== document.getElementById('story-backdrop') && !event.target.classList.contains('modal-close')) {
+    return;
+  }
+  document.getElementById('story-backdrop').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// MOBILE DRAWER
+function toggleMobileNav() {
+  const nav = document.getElementById('mobile-nav');
+  const backdrop = document.getElementById('mobilenav-backdrop');
+  const isOpen = nav.classList.contains('open');
+
+  if (isOpen) {
+    nav.classList.remove('open');
+    backdrop.classList.remove('open');
+    document.body.style.overflow = '';
+  } else {
+    nav.classList.add('open');
+    backdrop.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+// WISHLIST TOGGLE
+function toggleWishlist(productId, btnElem) {
+  const idx = wishlist.indexOf(productId);
+  if (idx > -1) {
+    wishlist.splice(idx, 1);
+    btnElem.classList.remove('active');
+    showToast('Removed from wishlist');
+  } else {
+    wishlist.push(productId);
+    btnElem.classList.add('active');
+    showToast('Saved to wishlist ❤️');
+  }
+  localStorage.setItem('decan_wishlist', JSON.stringify(wishlist));
+}
+
+// NEWSLETTER SUBSCRIPTION
+function subscribeNewsletter(form) {
+  const email = form.querySelector('input').value;
+  showToast(`Welcome to the Decan Inner Circle! 10% off code sent to ${email}`);
+  form.reset();
+}
+
+// TOAST NOTIFICATION HELPER
+function showToast(message) {
+  const container = document.getElementById('toast-container');
+  if (!container) return;
+
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.innerHTML = `
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+    <span>${message}</span>
+  `;
+
+  container.appendChild(toast);
+  setTimeout(() => toast.classList.add('show'), 50);
+
+  setTimeout(() => {
+    toast.classList.remove('show');
+    setTimeout(() => toast.remove(), 400);
+  }, 3200);
+}
+
+// KEYBOARD SHORTCUTS
+document.addEventListener('keydown', (e) => {
+  if (e.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) {
+    e.preventDefault();
+    openSearchModal();
+  }
+  if (e.key === 'Escape') {
+    closeCartDrawer();
+    closeProductModal();
+    closeCheckoutModal();
+    closeSearchModal();
+    closeSizeGuideModal();
+    closeStoryModal();
+  }
+});
+
+// INITIALIZATION
+window.addEventListener('DOMContentLoaded', () => {
+  renderCatalog();
+  updateCartUI();
+
+  // Hero locked to 1st preview as requested
+});
+</script>
+</body>
+</html>
